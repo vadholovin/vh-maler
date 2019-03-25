@@ -18,15 +18,17 @@
   'base/grid',
   'base/typography',
   'base/helpers';
+  
+// 5. Components
+@import
+  'components/container',
+  'components/overlay',
+  'components/button';
 
 // 4. Layout-related sections
 @import
   'layout/header',
   'layout/footer';
-
-// 5. Components
-@import
-  'components/button';
 
 // 6. Section-specific styles
 @import

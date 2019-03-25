@@ -1,0 +1,52 @@
+/*------------------------------------------*/
+/*  #ANIMATIONS
+/*------------------------------------------*/
+
+@keyframes hover-appear {
+  0% {
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,58 @@
+/*------------------------------------------*/
+/*  #HAMBURGER
+/*------------------------------------------*/
+
+.hamburger {
+  display: inline-block;
+  margin-left: auto;
+  padding: 15px;
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.hamburger-bar {
+  display: block;
+  width: 30px;
+  height: 0;
+  border-top: 2px solid #fff;
+  transition: border-color 0.3s ease-out;
+
+  @media (min-width: 1280px) {
+    width: 50px;
+    border-top: 4px solid #fff;
+  }
+}
+
+.header--scroll-fixed {
+  .hamburger-bar {
+    width: 30px;
+    border-top: 2px solid #fff;
+  }
+  .hamburger-bar:nth-child(2) {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+}
+
+.hamburger-bar:nth-child(2) {
+  margin-top: 7px;
+  margin-bottom: 7px;
+
+  @media (min-width: 1280px) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.hamburger:hover,
+.hamburger:focus {
+
+  .hamburger-bar {
+    border-color: #dadada;
+  }
+}

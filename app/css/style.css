@@ -1137,6 +1137,7 @@ html {
 
 body {
   font: 1rem/1.5 "Proba Pro", sans-serif;
+  font-weight: 300;
   color: #000;
 }
 
@@ -1261,11 +1262,60 @@ html, button, input, select, textarea,
 }
 
 /*------------------------------------------*/
-/*  HEADER
+/*  #CONTAINER
 /*------------------------------------------*/
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
 /*------------------------------------------*/
-/*  FOOTER
+/*  #OVERLAY
 /*------------------------------------------*/
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
 /*------------------------------------------*/
 /*  BUTTONS
 /*------------------------------------------*/
@@ -1285,7 +1335,102 @@ html, button, input, select, textarea,
 }
 
 /*------------------------------------------*/
-/*  HERO
+/*  #HEADER
 /*------------------------------------------*/
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 100000;
+}
+
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.brand {
+  display: block;
+}
+
+.brand--header {
+  margin-right: auto;
+}
+
+.menu-primary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu-primary__item {
+  display: inline-block;
+  padding: 0.75rem 1.125rem;
+  font: normal 0.875rem "Blender Pro", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.menu-primary__item:hover, .menu-primary__item:focus {
+  color: #fff;
+}
+
+.nav-contacts {
+  margin-left: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 0 6px 30px;
+}
+
+.nav-contact {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  font: normal 0.75rem "Blender Pro", sans-serif;
+  color: #fff;
+}
+
+.nav-contact:first-child {
+  margin-bottom: 10px;
+}
+
+.nav-contact:hover, .nav-contact:focus {
+  color: #fff;
+}
+
+.nav-contact::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.nav-contact--phone::after {
+  background-image: url(../img/icons/smartphone.svg);
+}
+
+.nav-contact--email::after {
+  background-image: url(../img/icons/email.svg);
+}
+
+/*------------------------------------------*/
+/*  FOOTER
+/*------------------------------------------*/
+/*------------------------------------------*/
+/*  #HERO
+/*------------------------------------------*/
+.hero {
+  padding-top: 120px;
+}
 
 /*# sourceMappingURL=style.css.map */

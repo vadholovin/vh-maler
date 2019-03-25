@@ -1,3 +1,88 @@
 /*------------------------------------------*/
-/*  HEADER
+/*  #HEADER
 /*------------------------------------------*/
+
+.page-header {
+  // height: 80px;
+  // margin-bottom: -80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 100000;
+}
+
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.brand {
+  display: block;
+}
+
+.brand--header {
+  margin-right: auto;
+}
+
+.menu-primary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu-primary__item {
+  display: inline-block;
+  padding: 0.75rem rem(18);
+  font: normal rem(14) $fontS;
+  color: #fff;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.nav-contacts {
+  margin-left: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 0 6px 30px;
+}
+
+.nav-contact {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  font: normal rem(12) $fontS;
+  color: #fff;
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.nav-contact--phone::after { background-image: url(../img/icons/smartphone.svg); }
+.nav-contact--email::after { background-image: url(../img/icons/email.svg); }
