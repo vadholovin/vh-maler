@@ -1,26 +1,58 @@
 /*------------------------------------------*/
 /*  BUTTONS
 /*------------------------------------------*/
-.btn {
+.button {
   position: relative;
   display: inline-block;
-  // width: ;
   text-align: center;
   white-space: nowrap;
   vertical-align: top;
   user-select: none;
-  // border: 0;
-  // padding: ;
-  // font-family: $;
-  // font-size: ;
-  // line-height: 1;
-  // font-weight: $;
-  // border-radius: ;
-  // color: ;
-  transition: background-color 0.15s ease-in-out;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 0.75em 2em;
+  font-family: $fontS;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 3.88px 0.12px rgba(0, 0, 0, 0.07);
+  transition:
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
   cursor: pointer;
 
   &:focus {
-    outline: none;
+    outline: unset;
   }
+}
+
+.button-primary {
+  border-color: $green;
+  background-color: $green;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: mix(#000, $green, 10%);
+  }
+}
+
+.button-arrow::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  margin-left: 8px;
+  transform: rotate(180deg);
+  background-image: url(../img/icons/arrow-back.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-arrow:hover::after {
+  transform: rotate(180deg) translateX(-100%);
 }
