@@ -142,7 +142,7 @@
 
 
     <!-- GUARANTEES SECTION -->
-    <section class="guarantees" id="guarantees">
+    <section class="guarantees section-bg" id="guarantees">
       <div class="container">
         <p class="section-title guarantees-title">
           Мы даем гарантии на свои работы
@@ -194,36 +194,57 @@
 
     <!-- PORTFOLIO SECTION -->
     <section class="portfolio" id="portfolio">
-      <div class="container-fluid">
+      <div class="container container--portfolio-top">
         <h2 class="section-title portfolio-title">Портфолио</h2>
+      </div>
+
+      <div class="container-fluid">
 
         <div class="portfolio-top-row"></div>
 
-        <div class="portfolio-middle-row"></div>
-
-        <div class="portfolio-bottom-row">
-          <h3 class="section-title beforeafter-title">Фото до и после</h3>
-
-        </div>
+        <div class="portfolio-bottom-row"></div>
+        
       </div>
+
+      <div class="container container--portfolio-bottom">
+        <h3 class="section-title beforeafter-title">Фото до и после</h3>
+      </div>
+
+      <div class="container-fluid">
+
+      </div>
+
     </section>
 
 
     <!-- VIDEO SECTION -->
-    <section class="video" id="video">
+    <section class="video section-bg" id="video">
       <div class="container">
         <h2 class="section-title video-title">
           Прогуляйтесь по готовому интерьеру от Maler
-          <span></span>
+          <span class="section-title--blur">готовый интерьер от Maler</span>
         </h2>
 
         <div class="video-block">
-          <div class="video__textbox">
-            <h3 class="video__textbox-title">Квартира в стиле прованс</h3>
-            <p>
-              Создание тематических интерьеров уникально во всем.
-              От выбранного стиля до технологических особеностей материалов. В этой квартире нужно было создать атмосферу семейного поместья в духе прованса.
-            </p>
+          <div class="video-wrapper js-videoWrapper">
+            <iframe class="videoIframe js-videoIframe" width="855" height="481" src="" data-src="https://www.youtube.com/embed/o8-JuGIiDIc?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0" frameborder="0" allowfullscreen allowTransparency="true"></iframe>
+
+            <button class="video-play overlay js-videoPlay" style="background-image: url(img/video-thumb.jpg);">
+              <span class="video-play__button">
+                <svg enable-background="new 0 0 510 510" version="1.1" viewBox="0 0 510 510" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                  <path class="video-play__icon" d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M204,369.75v-229.5L357,255    L204,369.75z"/>
+                </svg>
+              </span>
+            </button>
+
+            <div class="video__textbox">
+              <h3 class="video__textbox-title">Квартира в стиле прованс</h3>
+              <p>
+                Создание тематических интерьеров уникально во всем.
+                От выбранного стиля до технологических особеностей материалов. В этой квартире нужно было создать атмосферу семейного поместья в духе прованса.
+              </p>
+            </div>
+            
           </div>
         </div>
       </div>
