@@ -1,0 +1,100 @@
+/*------------------------------------------*/
+/*  #BENEFITS
+/*------------------------------------------*/
+
+.benefits {
+  position: relative;
+  padding-top: 120px;
+  color: #fff;
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+}
+
+.benefits-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -2;
+}
+
+.benefits-list {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.benefit {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 104px;
+}
+
+.benefit-title {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 36px;
+  font: bold rem(26) $fontS;
+  line-height: 1;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+  }
+}
+
+.benefit-title--clock::after {
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/icons/clock.svg);
+}
+.benefit-title--truck::after {
+  width: 80px;
+  height: 50px;
+  background-image: url(../img/icons/truck.svg);
+}
+.benefit-title--docs::after {
+  width: 50px;
+  height: 63px;
+  background-image: url(../img/icons/docs.svg);
+}
+.benefit-title--wallet::after {
+  width: 58px;
+  height: 60px;
+  background-image: url(../img/icons/wallet.svg);
+}
+.benefit-title--trophy::after {
+  width: 52px;
+  height: 63px;
+  background-image: url(../img/icons/trophy.svg);
+}
+.benefit-title--graphics::after {
+  width: 52px;
+  height: 63px;
+  background-image: url(../img/icons/graphics.svg);
+}
+
+.benefit-desc {
+  padding-left: 36px;
+  line-height: 1.7;
+}
+
+.benefit-notes {
+  font-style: italic;
+}
