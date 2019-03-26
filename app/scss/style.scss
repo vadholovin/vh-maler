@@ -23,7 +23,8 @@
 @import
   'components/container',
   'components/overlay',
-  'components/button';
+  'components/button',
+  'components/section-title';
 
 // 4. Layout-related sections
 @import
@@ -33,4 +34,5 @@
 // 6. Section-specific styles
 @import
   'sections/hero',
-  'sections/benefits';
+  'sections/benefits',
+  'sections/guarantees';

@@ -1,0 +1,65 @@
+/*------------------------------------------*/
+/*  #GUARANTEES
+/*------------------------------------------*/
+
+.guarantees {
+  padding-top: 84px;
+  padding-bottom: 74px;
+  background-color: #edeeef;
+}
+
+.guarantees-title {
+  margin-bottom: 42px;
+}
+
+.guarantees-list {
+  justify-content: center;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  > [class*=pure-u] {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 35px;
+  }
+}
+
+.guarantee {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px;
+  border: 1px solid #f7f7f7;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0px 7px 13.5px 1.5px rgba(0, 0, 0, 0.08);
+}
+
+.guarantee-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.guarantee-time {
+  flex: none;
+  margin-right: 30px;
+  padding: 16px 38px 16px 0;
+  border-right: 1px solid #e0e0e0;
+  font-family: $fontS;
+  font-weight: 500;
+  font-size: rem(26);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.guarantee-body {
+  padding-top: 12px;
+  font-size: rem(18);
+
+  b {
+    font-weight: 500;
+  }
+}

@@ -20,7 +20,14 @@
       <div class="container">
         <nav class="page-nav">
           <a class="brand brand--header">
-            <img src="img/logo.svg" alt="логотип Maler" width="134" height="32">
+            <object type="image/svg+xml" data="img/logo.svg" width="134" height="32">
+              <img
+                src="img/logo.png"
+                srcset="img/logo.png 1x,
+                img/logo@2x.png 1.5x,
+                img/logo@2x.png 2x"
+                width="134" height="32" alt="">
+            </object>
           </a>
 
           <div class="menu-primary">
@@ -137,30 +144,47 @@
     <!-- GUARANTEES SECTION -->
     <section class="guarantees" id="guarantees">
       <div class="container">
-        <p class="section-title guarantees-title">Мы даем гарантии на свои работы</p>
+        <p class="section-title guarantees-title">
+          Мы даем гарантии на свои работы
+          <span class="section-title--blur">даем гарантии на работы</span>
+        </p>
 
         <div class="pure-g guarantees-list">
-          <div class="pure-u-1 pure-u-md-1-2 guarantee">
-            <header class="guarantee-head">
-              <span class="guarantee-time"></span>
-              <span class="guarantee-logo">
-                <img src="" alt="" srcset="">
-              </span>
-            </header>
-            <div class="guarantee-body">
-              <p>После окончания ремонта ваша квартира и имущество застрахованы на <b>750 000 рублей</b>.</p>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="guarantee">
+              <header class="guarantee-head">
+                <span class="guarantee-time">1 ГОД</span>
+                <span class="guarantee-logo">
+                  <img
+                    srcset="img/alpha-logo.png 1x,
+                      img/alpha-logo@2x.png 1.5x,
+                      img/alpha-logo@2x.png 2x"
+                    src="img/alpha-logo.png"
+                    width="240" height="52"  alt="">
+                </span>
+              </header>
+              <div class="guarantee-body">
+                <p>После окончания ремонта ваша квартира и имущество застрахованы на <b>750 000 рублей</b>.</p>
+              </div>
             </div>
           </div>
 
-          <div class="pure-u-1 pure-u-md-1-2 guarantee">
-            <header class="guarantee-head">
-              <span class="guarantee-time"></span>
-              <span class="guarantee-logo">
-                <img src="" alt="" srcset="">
-              </span>
-            </header>
-            <div class="guarantee-body">
-              <p>Распространяется на все выполненные работы.</p>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="guarantee">
+              <header class="guarantee-head">
+                <span class="guarantee-time">3 ГОДА</span>
+                <span class="guarantee-logo">
+                  <img
+                    src="img/logo.png"
+                    srcset="img/logo.png 1x,
+                    img/logo@2x.png 1.5x,
+                    img/logo@2x.png 2x"
+                    width="209" height="50" alt="">
+                </span>
+              </header>
+              <div class="guarantee-body">
+                <p>Распространяется на все выполненные работы.</p>
+              </div>
             </div>
           </div>
         </div>
