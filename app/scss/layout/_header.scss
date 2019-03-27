@@ -28,25 +28,6 @@
   margin-right: auto;
 }
 
-.menu-primary {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.menu-primary__item {
-  display: inline-block;
-  padding: 0.75rem rem(18);
-  font: normal rem(14) $fontS;
-  color: #fff;
-  text-transform: uppercase;
-
-  &:hover,
-  &:focus {
-    color: #fff;
-  }
-}
-
 .nav-contacts {
   margin-left: 10px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);

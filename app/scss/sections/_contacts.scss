@@ -1,0 +1,100 @@
+/*------------------------------------------*/
+/*  #CONTACTS
+/*------------------------------------------*/
+
+.contacts {
+  position: relative;
+  width: 100%;
+
+  .container {
+    position: relative;
+    height: 640px;
+  }
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.contacts-block {
+  position: absolute;
+  top: 90px;
+  left: 15px;
+  width: 100%;
+  max-width: 460px;
+  padding: 30px 40px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 5px 11.16px 0.84px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.contacts-title {
+  padding-top: 0;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 68px;
+    border-top: 3px solid $green;
+  }
+}
+
+.contacts-item {
+  position: relative;
+  padding: 16px 0 16px 36px;
+  font-size: rem(18);
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 18px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+.contacts-item:not(:first-child) {
+  border-top: 1px solid #e0e0e0;
+}
+
+.contacts-item--phone::after {
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/icons/call.svg);
+}
+
+.contacts-item--email::after {
+  top: 22px;
+  width: 25px;
+  height: 18px;
+  background-image: url(../img/icons/mail.svg);
+}
+
+.contacts-item--address {
+  
+  &::after {
+    width: 20px;
+    height: 27px;
+    background-image: url(../img/icons/place.svg);
+  }
+
+  span {
+    color: #888;
+  }
+}

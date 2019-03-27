@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <filter id="f2" width="200%" height="200%">
+    <feOffset result="offOut" in="SourceGraphic" dx="0" dy="3" />
+    <feGaussianBlur result="blurOut" in="offOut" stdDeviation="60" />
+    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+  </filter>
+</defs>
+<style type="text/css">
+	.st0{
+    fill:#50BC3C;
+    filter: url(#f2);
+  }
+	.st1{fill:#FFFFFF;}
+
+</style>
+<path class="st0" d="m481.3 390h-450c-6.6 0-12-5.4-12-12v-322c0-6.6 5.4-12 12-12h450c6.6 0 12 5.4 12 12v322c0 6.6-5.4 12-12 12z"/>
+<path class="st0" d="m144.4 79.3c-24 0-43.4 19.4-43.4 43.4v272.3h43v72.9h0.4 6.7l72.9-72.9h238c22.1 0 40-17.9 40-40v-275.7h-357.6z"/>
+<circle class="st1" cx="166.1" cy="210.5" r="25.3"/>
+<circle class="st1" cx="257.1" cy="210.5" r="25.3"/>
+<circle class="st1" cx="347.6" cy="210.5" r="25.3"/>
+<path class="st1" d="m462 27h-412c-27.6 0-50 22.4-50 50v278c0 27.6 22.4 50 50 50h84v70c0 4 2.4 7.7 6.2 9.2 1.2 0.5 2.5 0.8 3.8 0.8 2.6 0 5.2-1 7.1-2.9l77.1-77.1h233.8c27.6 0 50-22.4 50-50v-278c0-27.6-22.4-50-50-50zm30 328c0 16.5-13.5 30-30 30h-238c-2.7 0-5.2 1.1-7.1 2.9l-62.9 63v-55.9c0-5.5-4.5-10-10-10h-94c-16.5 0-30-13.5-30-30v-278c0-15.9 12.4-28.9 28-29.9l20-0.1h394c16.5 0 30 13.5 30 30v278z"/>
+</svg>

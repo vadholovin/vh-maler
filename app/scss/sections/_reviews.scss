@@ -1,0 +1,137 @@
+/*------------------------------------------*/
+/*  #REVIEWS
+/*------------------------------------------*/
+
+.reviews {
+  min-height: 700px;
+  padding-top: 80px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.reviews-title {
+  margin-bottom: 78px;
+  color: #fff;
+}
+
+.reviews-slider {
+  padding: 0 98px;
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 45px 30px 30px;
+  border: 1px solid #f7f7f7;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 7.52px 0.48px rgba(0, 0, 0, 0.5);
+}
+
+.review-img {
+  position: relative;
+  flex: none;
+  width: 100%;
+  max-width: 210px;
+  margin-right: 36px;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.review-body {
+  flex: 1;
+}
+
+.review-heading {
+  position: relative;
+  padding-bottom: 16px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    border-top: 2px solid $green;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.review-name {
+  font-weight: bold;
+  font-family: $fontS;
+  font-size: rem(24);
+  line-height: 1.4;
+}
+
+.review-work {
+  font-style: italic;
+  font-size: rem(14);
+  line-height: 1.4;
+  color: #6d6d6d;
+}
+
+.review-desc {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: -45px;
+    right: 10px;
+    width: 119px;
+    height: 102px;
+    background: url(../img/icons/quote.svg) no-repeat 50% 50% / cover;
+    opacity: 0.05;
+  }
+}
+
+.review-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.review-logo {
+  flex: none;
+  display: inline-block;
+}
+
+.review-link {
+  margin-left: 20px;
+  padding: 10px 0 10px 20px;
+  border-left: 1px solid #e0e0e0;
+  font-size: rem(14);
+  line-height: 1;
+  color: $green;
+
+  &:hover,
+  &:focus {
+    color: $green;
+  }
+
+  span {
+    border-bottom: 1px dashed $green;
+  }
+}
