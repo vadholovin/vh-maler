@@ -18,9 +18,8 @@
 
 .interior-slider {
 
-  img {
-    display: block;
-    max-height: 100%;
+  .twentytwenty-container {
+    min-height: 200px;
   }
 
   .twentytwenty-overlay:hover {

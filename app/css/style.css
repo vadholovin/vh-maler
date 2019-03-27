@@ -2457,9 +2457,8 @@ html, button, input, select, textarea,
   border-top: 1px solid #e1e1e1;
 }
 
-.interior-slider img {
-  display: block;
-  max-height: 100%;
+.interior-slider .twentytwenty-container {
+  min-height: 200px;
 }
 
 .interior-slider .twentytwenty-overlay:hover {
