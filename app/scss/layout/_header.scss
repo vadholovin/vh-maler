@@ -3,15 +3,19 @@
 /*------------------------------------------*/
 
 .page-header {
-  margin-bottom: -80px;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
+  // margin-bottom: -80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 15px 0;
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 100000;
+}
+
+.header--scroll {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .page-nav {

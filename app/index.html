@@ -9,6 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="libs/animate.css/animate.min.css">
+  <link rel="stylesheet" href="libs/flickity/flickity.min.css">
+  <link rel="stylesheet" href="libs/twentytwenty/twentytwenty.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,12 +34,12 @@
           </a>
 
           <div class="menu-primary">
-            <a href="#" class="menu-primary__item">ПОЧЕМУ МЫ?</a>
+            <a href="#benefits" id="to_benefits" class="menu-primary__item">ПОЧЕМУ МЫ?</a>
             <a href="#" class="menu-primary__item dropdown">РЕМОНТ</a>
             <a href="#" class="menu-primary__item dropdown">ДИЗАЙН</a>
-            <a href="#" class="menu-primary__item">ВОПРОС-ОТВЕТ</a>
-            <a href="#" class="menu-primary__item">КОМАНДА</a>
-            <a href="#" class="menu-primary__item">КОНТАКТЫ</a>
+            <a href="#faq" id="to_faq" class="menu-primary__item">ВОПРОС-ОТВЕТ</a>
+            <a href="#team" id="to_team" class="menu-primary__item">КОМАНДА</a>
+            <a href="#contacts" id="to_contacts" class="menu-primary__item">КОНТАКТЫ</a>
           </div>
 
           <div class="nav-contacts">
@@ -200,18 +203,122 @@
 
       <div class="container-fluid">
 
-        <div class="portfolio-top-row"></div>
+        <div class="portfolio-top-row">
+          <div class="works-slider" id="worksSlider_1">
+            <div class="work-cell">
+              <div class="work">
+                <div class="work-img" style="background-image: url(img/portfolio/portfolio-1.jpg);"></div>
+              </div>
+            </div>
+            <div class="work-cell">
+              <div class="work">
+                <div class="work-img" style="background-image: url(img/portfolio/portfolio-2.jpg);"></div>
+              </div>
+            </div>
+            <div class="work-cell">
+              <div class="work">
+                <div class="work-img" style="background-image: url(img/portfolio/portfolio-1.jpg);"></div>
+              </div>
+            </div>
+          </div>
 
-        <div class="portfolio-bottom-row"></div>
-        
+          <div class="works-nav js-works-nav--1">
+            <button class="nav-prev"></button>
+            <button class="nav-next"></button>
+          </div>
+        </div>
+
+        <div class="portfolio-bottom-row">
+          <div class="works-slider" id="worksSlider_2">
+            <div class="work-cell">
+              <div class="work">
+                <div class="work-img" style="background-image: url(img/portfolio/portfolio-1.jpg);"></div>
+              </div>
+            </div>
+            <div class="work-cell">
+              <div class="work">
+                <div class="work-img" style="background-image: url(img/portfolio/portfolio-2.jpg);"></div>
+              </div>
+            </div>
+            <div class="work-cell">
+              <div class="work">
+                <div class="work-img" style="background-image: url(img/portfolio/portfolio-1.jpg);"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-nav js-works-nav--2">
+            <button class="nav-prev"></button>
+            <button class="nav-next"></button>
+          </div>
+        </div>
+
       </div>
 
       <div class="container container--portfolio-bottom">
-        <h3 class="section-title beforeafter-title">Фото до и после</h3>
+        <h3 class="section-title bna-title">Фото до и после</h3>
       </div>
 
       <div class="container-fluid">
+        <div class="bna-wrapper">
+          <div class="bna-slider" id="bnaSlider">
+            <div class="bna-cell">
+              <div class="bna-item">
+                <div class="bna-item__col">
+                  <figure class="bna-item__img">
+                    <img src="img/portfolio/ba-1.jpg" alt="">
+                    <figcaption class="bna-item__text">ДО</figcaption>
+                  </figure>
+                </div>
+                <div class="bna-item__col">
+                  <figure class="bna-item__img">
+                    <img src="img/portfolio/ba-2.jpg" alt="">
+                    <figcaption class="bna-item__text">ПОСЛЕ</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
 
+            <div class="bna-cell">
+              <div class="bna-item">
+                <div class="bna-item__col">
+                  <figure class="bna-item__img">
+                    <img src="img/portfolio/ba-1.jpg" alt="">
+                    <figcaption class="bna-item__text">ДО</figcaption>
+                  </figure>
+                </div>
+                <div class="bna-item__col">
+                  <figure class="bna-item__img">
+                    <img src="img/portfolio/ba-2.jpg" alt="">
+                    <figcaption class="bna-item__text">ПОСЛЕ</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <div class="bna-cell">
+              <div class="bna-item">
+                <div class="bna-item__col">
+                  <figure class="bna-item__img">
+                    <img src="img/portfolio/ba-1.jpg" alt="">
+                    <figcaption class="bna-item__text">ДО</figcaption>
+                  </figure>
+                </div>
+                <div class="bna-item__col">
+                  <figure class="bna-item__img">
+                    <img src="img/portfolio/ba-2.jpg" alt="">
+                    <figcaption class="bna-item__text">ПОСЛЕ</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bna-nav">
+            <button class="nav-prev"></button>
+            <button class="nav-next"></button>
+          </div>
+        </div>
       </div>
 
     </section>
@@ -443,13 +550,19 @@
 
       <div class="interior-row">
         <div class="container">
-
+          <div class="interior-slider twentytwenty-container">
+            <img src="img/compare/before-1.jpg" alt="">
+            <img src="img/compare/after-1.jpg" alt="">
+          </div>
         </div>
       </div>
 
       <div class="interior-row">
         <div class="container">
-
+          <div class="interior-slider twentytwenty-container">
+            <img src="img/compare/before-1.jpg" alt="">
+            <img src="img/compare/after-1.jpg" alt="">
+          </div>
         </div>
       </div>
       
@@ -553,15 +666,32 @@
       <div class="container">
         <h2 class="section-title tv-title">Система видеонаблюдения от Maler</h2>
 
-        <div class="tv-slider">
-          <div class="tv-item">
-            <div class="tv-item__textbox">
-              <p class="tv-item__textbox-title">Квартира в стиле прованс</p>
-              <p class="tv-item__textbox-desc">
-                Создание тематических интерьеров уникально во всем.
-                От выбранного стиля до технологических особеностей материалов. В этой квартире нужно было создать атмосферу семейного поместья в духе прованса.
-              </p>
+        <div class="tv-wrapper">
+          <div class="tv-slider" id="tvSlider">
+            <div class="tv-item" style="background-image: url(img/tv/tv-1.jpg);">
+              <div class="tv-item__textbox">
+                <p class="tv-item__textbox-title">Квартира в стиле прованс</p>
+                <p class="tv-item__textbox-desc">
+                  Создание тематических интерьеров уникально во всем.
+                  От выбранного стиля до технологических особеностей материалов. В этой квартире нужно было создать атмосферу семейного поместья в духе прованса.
+                </p>
+              </div>
             </div>
+
+            <div class="tv-item" style="background-image: url(img/tv/tv-1.jpg);">
+              <div class="tv-item__textbox">
+                <p class="tv-item__textbox-title">Квартира в стиле прованс</p>
+                <p class="tv-item__textbox-desc">
+                  Создание тематических интерьеров уникально во всем.
+                  От выбранного стиля до технологических особеностей материалов. В этой квартире нужно было создать атмосферу семейного поместья в духе прованса.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv-nav slider-nav">
+            <button class="nav-prev"></button>
+            <button class="nav-next"></button>
           </div>
         </div>
       </div>
@@ -769,39 +899,80 @@
       <div class="container">
         <h2 class="section-title reviews-title">Отзывы наших клиентов</h2>
 
-        <div class="reviews-slider">
-          <div class="review-cell">
-            <div class="review">
-              <div class="review-img">
-                <img src="img/reviewers/reviewer-1.jpg" alt="">
-              </div>
-
-              <div class="review-body">
-                <div class="review-heading">
-                  <span class="review-name">Иван Петров</span>
-                  <span class="review-work">капитальный ремонт 2-х комнатной квартиры</span>
+        <div class="reviews-wrapper">
+          <div class="reviews-slider" id="reviewsSlider">
+            <div class="review-cell">
+              <div class="review">
+                <div class="review-img">
+                  <img src="img/reviewers/reviewer-1.jpg" alt="">
                 </div>
-
-                <div class="review-desc">
-                  <p>
-                    Через несколько недель мне позвонила то ли заведующая магазина, то ли директор, поблагодарила за отзыв и сказала, что он был зачитан на собрании совета директоров торговой сети и благодаря ему всем сотрудникам магазина выписали дополнительную премию за высокое качество обслуживания. А еще через некоторое время по почте пришло уведомление письмом о том, что отзыв, действительно был зачитан.
-                  </p>
-                </div>
-
-                <div class="review-footer">
-                  <span class="review-logo">
-                    <img
-                      src="img/yandex-logo.png"
-                      srcset="img/yandex-logo.png 1x,
-                      img/yandex-logo@2x.png 1.5x,
-                      img/yandex-logo@2x.png 2x"
-                      width="52" height="20" alt="" >
-                  </span>
-
-                  <a href="#" class="review-link"><span>Читать отзыв на Яндексе</span></a>
+  
+                <div class="review-body">
+                  <div class="review-heading">
+                    <span class="review-name">Иван Петров</span>
+                    <span class="review-work">капитальный ремонт 2-х комнатной квартиры</span>
+                  </div>
+  
+                  <div class="review-desc">
+                    <p>
+                      Через несколько недель мне позвонила то ли заведующая магазина, то ли директор, поблагодарила за отзыв и сказала, что он был зачитан на собрании совета директоров торговой сети и благодаря ему всем сотрудникам магазина выписали дополнительную премию за высокое качество обслуживания. А еще через некоторое время по почте пришло уведомление письмом о том, что отзыв, действительно был зачитан.
+                    </p>
+                  </div>
+  
+                  <div class="review-footer">
+                    <span class="review-logo">
+                      <img
+                        src="img/yandex-logo.png"
+                        srcset="img/yandex-logo.png 1x,
+                        img/yandex-logo@2x.png 1.5x,
+                        img/yandex-logo@2x.png 2x"
+                        width="52" height="20" alt="" >
+                    </span>
+  
+                    <a href="#" class="review-link"><span>Читать отзыв на Яндексе</span></a>
+                  </div>
                 </div>
               </div>
             </div>
+            
+            <div class="review-cell">
+              <div class="review">
+                <div class="review-img">
+                  <img src="img/reviewers/reviewer-1.jpg" alt="">
+                </div>
+  
+                <div class="review-body">
+                  <div class="review-heading">
+                    <span class="review-name">Иван Петров</span>
+                    <span class="review-work">капитальный ремонт 2-х комнатной квартиры</span>
+                  </div>
+  
+                  <div class="review-desc">
+                    <p>
+                      Через несколько недель мне позвонила то ли заведующая магазина, то ли директор, поблагодарила за отзыв и сказала, что он был зачитан на собрании совета директоров торговой сети и благодаря ему всем сотрудникам магазина выписали дополнительную премию за высокое качество обслуживания. А еще через некоторое время по почте пришло уведомление письмом о том, что отзыв, действительно был зачитан.
+                    </p>
+                  </div>
+  
+                  <div class="review-footer">
+                    <span class="review-logo">
+                      <img
+                        src="img/yandex-logo.png"
+                        srcset="img/yandex-logo.png 1x,
+                        img/yandex-logo@2x.png 1.5x,
+                        img/yandex-logo@2x.png 2x"
+                        width="52" height="20" alt="" >
+                    </span>
+  
+                    <a href="#" class="review-link"><span>Читать отзыв на Яндексе</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews-nav slider-nav">
+            <button class="nav-prev"></button>
+            <button class="nav-next"></button>
           </div>
         </div>
       </div>
@@ -813,7 +984,8 @@
       <div class="container">
         <h2 class="section-title team-title">Наша команда специалистов</h2>
 
-        <div class="team-slider">
+      <div class="team-wrapper">
+        <div class="team-slider" id="teamSlider">
           <div class="team-cell">
             <div class="team-item">
               <div class="team-item__img">
@@ -827,10 +999,10 @@
             </div>
           </div>
 
-          <!-- <div class="team-cell">
+          <div class="team-cell">
             <div class="team-item">
               <div class="team-item__img">
-                <img src="" alt="">
+                <img src="img/team/t-02.jpg" alt="">
               </div>
 
               <div class="team-item__body">
@@ -843,7 +1015,7 @@
           <div class="team-cell">
             <div class="team-item">
               <div class="team-item__img">
-                <img src="" alt="">
+                <img src="img/team/t-03.jpg" alt="">
               </div>
 
               <div class="team-item__body">
@@ -851,9 +1023,15 @@
                 <span class="team-item__position">Руководитель отдела по работе с клиентами</span>
               </div>
             </div>
-          </div> -->
+          </div>
 
         </div>
+
+        <div class="team-nav slider-nav">
+          <button class="nav-prev"></button>
+          <button class="nav-next"></button>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -978,12 +1156,12 @@
           </a>
 
           <div class="menu-secondary">
-            <a href="#" class="menu-secondary__item">ПОЧЕМУ МЫ?</a>
+            <a href="#benefits" id="to_benefits_2" class="menu-secondary__item">ПОЧЕМУ МЫ?</a>
             <a href="#" class="menu-secondary__item dropdown">РЕМОНТ</a>
             <a href="#" class="menu-secondary__item dropdown">ДИЗАЙН</a>
-            <a href="#" class="menu-secondary__item">ВОПРОС-ОТВЕТ</a>
-            <a href="#" class="menu-secondary__item">КОМАНДА</a>
-            <a href="#" class="menu-secondary__item">КОНТАКТЫ</a>
+            <a href="#faq" id="to_faq_2" class="menu-secondary__item">ВОПРОС-ОТВЕТ</a>
+            <a href="#team" id="to_team_2" class="menu-secondary__item">КОМАНДА</a>
+            <a href="#contacts" id="to_contacts_2" class="menu-secondary__item">КОНТАКТЫ</a>
           </div>
 
           <div class="socials-block">
@@ -1031,7 +1209,23 @@
   <!-- Scripts -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="libs/flickity/flickity.pkgd.min.js"></script>
+  <script src="libs/micromodal/micromodal.min.js"></script>
+  <script src="libs/twentytwenty/jquery.event.move.min.js"></script>
+  <script src="libs/twentytwenty/jquery.twentytwenty.min.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+    $(window).load(function() {
+
+      $('.twentytwenty-container').twentytwenty({
+        before_label: 'Визуализация',
+        after_label: 'Фотография'
+      });
+
+    });
+  </script>
 
 </body>
 

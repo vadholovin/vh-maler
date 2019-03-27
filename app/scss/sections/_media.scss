@@ -87,4 +87,11 @@
   font-size: rem(14);
   border-bottom: 1px dashed $green;
   line-height: 1.4;
+  transition: border-color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $green;
+    border-color: transparent;
+  }
 }

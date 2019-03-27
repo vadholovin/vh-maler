@@ -70,12 +70,6 @@
   fill: mix(#000, $green, 15%);
 }
 
-.video-block .videoWrapperActive .video-play {
-  opacity: 0;
-  height: 0;
-  transition-delay: 0s, 800ms;
-}
-
 .video__textbox {
   position: absolute;
   top: 30px;
@@ -108,5 +102,15 @@
     left: 0;
     width: 50px;
     border-top: 2px solid #fff;
+  }
+}
+
+.video-block .videoWrapperActive {
+
+  .video-play,
+  .video__textbox {
+    opacity: 0;
+    height: 0;
+    transition-delay: 0s, 800ms;
   }
 }
