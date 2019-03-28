@@ -61,6 +61,97 @@
 
 
 /*----------------------------------------------------*/
+/*  #PRICE CAROUSELS
+/*----------------------------------------------------*/
+
+/**
+ * PRICE REPAIR CAROUSEL
+ */
+(function($) {
+
+  var options = {
+    wrapAround: true,
+    freeScroll: true,
+    prevNextButtons: false,
+    pageDots: false,
+    draggable: false,
+    imagesLoaded: true,
+    hash: true,
+  }
+
+  var $carousel = $('#priceSlider_1').flickity(options);
+
+  /**
+   * #CUSTOM UI
+   */
+  // previous
+  $('.js-price-nav--1 .nav-prev').on( 'click', function() {
+    $carousel.flickity('previous');
+  });
+  // next
+  $('.js-price-nav--1 .nav-next').on( 'click', function() {
+    $carousel.flickity('next');
+  });
+
+})(jQuery);
+
+
+/**
+ * PRICE DESIGN CAROUSEL
+ */
+(function($) {
+
+  var options = {
+    wrapAround: true,
+    freeScroll: true,
+    prevNextButtons: false,
+    pageDots: false,
+    draggable: false,
+    imagesLoaded: true,
+    hash: true,
+  }
+
+  var $carousel = $('#priceSlider_2').flickity(options);
+
+  /**
+   * #CUSTOM UI
+   */
+  // previous
+  $('.js-price-nav--2 .nav-prev').on( 'click', function() {
+    $carousel.flickity('previous');
+  });
+  // next
+  $('.js-price-nav--2 .nav-next').on( 'click', function() {
+    $carousel.flickity('next');
+  });
+
+})(jQuery);
+
+
+/**
+ * SHOW MODAL CAROUSELS
+ */
+(function ($) {
+
+  // Show
+  $('[data-modal-trigger]').click(function (e) { 
+    e.preventDefault();
+    var value = $(this).attr('data-modal-trigger');
+
+    $('#'+value).addClass('is-active');
+  });
+
+
+  // Hide
+  $('.button-modal-close').click(function (e) { 
+    e.preventDefault();
+    $('.modalbox.is-active').removeClass('is-active');
+  });
+
+})(jQuery);
+
+
+/*----------------------------------------------------*/
 /*  #REVIEWS CAROUSEL
 /*----------------------------------------------------*/
 
@@ -188,6 +279,9 @@
 })(jQuery);
 
 
+/**
+ * BEFORE AND AFTER CAROUSEL
+ */
 (function($) {
 
   var options = {
@@ -218,7 +312,7 @@
 
 
 /*----------------------------------------------------*/
-/*  #APP
+/*  #SWITCH APP IMAGES
 /*----------------------------------------------------*/
 
 (function ($) {
@@ -240,7 +334,7 @@
 
 
 /*----------------------------------------------------*/
-/*  YOUTUBE VIDEO
+/*  #SHOW YOUTUBE VIDEO
 /*----------------------------------------------------*/
 
 (function ($) {
@@ -338,7 +432,7 @@ jQuery(document).ready(function($){
 
 
 /*----------------------------------------------------*/
-/*	SCROLL NAVBAR
+/*	#SCROLL NAVBAR
 /*----------------------------------------------------*/
 
 (function($) {
@@ -360,3 +454,18 @@ jQuery(document).ready(function($){
   });
 
 })( jQuery );
+
+
+
+/*----------------------------------------------------*/
+/*  #SIMPLEBAR INIT
+/*----------------------------------------------------*/
+
+(function ($) {
+
+  $('.js-simplebar').each(function(index, el) {
+    new SimpleBar(el, {autoHide: false});
+  });
+
+})(jQuery);
+

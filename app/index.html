@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="libs/animate.css/animate.min.css">
   <link rel="stylesheet" href="libs/flickity/flickity.min.css">
   <link rel="stylesheet" href="libs/twentytwenty/twentytwenty.min.css">
+  <link rel="stylesheet" href="libs/simplebar/simplebar.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -378,7 +379,7 @@
             <span class="price-subtitle">РЕМОНТ</span>
           </div>
 
-          <div class="pure-g price-list">
+          <div class="pure-g price-list price-list--repair">
             <div class="pure-u-1 pure-u-xl-1-3 price-item">
               <div class="price-item__content">
                 <div class="price-item__img">
@@ -399,7 +400,7 @@
                 </div>
 
                 <div class="price-item__footer">
-                  <button class="button button-primary">ПОДРОБНЕЕ</button>
+                  <a href="#price-repair-1" class="button button-primary" data-modal-trigger="modalPrice-1">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -424,7 +425,7 @@
                 </div>
 
                 <div class="price-item__footer">
-                  <button class="button button-primary">ПОДРОБНЕЕ</button>
+                  <a href="#price-repair-2" class="button button-primary" data-modal-trigger="modalPrice-1">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -449,7 +450,7 @@
                 </div>
 
                 <div class="price-item__footer">
-                  <button class="button button-primary">ПОДРОБНЕЕ</button>
+                  <a href="#price-repair-3" class="button button-primary" data-modal-trigger="modalPrice-1">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -482,7 +483,7 @@
                 </div>
 
                 <div class="price-item__footer">
-                  <button class="button button-primary">ПОДРОБНЕЕ</button>
+                  <a href="#price-design-1" class="button button-primary" data-modal-trigger="modalPrice-2">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -507,7 +508,7 @@
                 </div>
 
                 <div class="price-item__footer">
-                  <button class="button button-primary">ПОДРОБНЕЕ</button>
+                  <a href="#price-design-2" class="button button-primary" data-modal-trigger="modalPrice-2">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -532,14 +533,14 @@
                 </div>
 
                 <div class="price-item__footer">
-                  <button class="button button-primary">ПОДРОБНЕЕ</button>
+                  <a href="#price-design-3" class="button button-primary" data-modal-trigger="modalPrice-2">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- .price end -->
 
 
     <!-- INTERIOR SECTION -->
@@ -1027,7 +1028,7 @@
 
         </div>
 
-        <div class="team-nav slider-nav">
+        <div class="team-nav">
           <button class="nav-prev"></button>
           <button class="nav-next"></button>
         </div>
@@ -1204,6 +1205,311 @@
       </div>
     </footer>
 
+
+
+    <!-- MODAL CONTENT -->
+
+
+    <!-- Modal repair price -->
+    <div class="modalbox modalbox--price" id="modalPrice-1">
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <button type="button" class="button-modal-close"></button>
+            
+          <div class="modal-content">
+            <div class="price-wrapper">
+              <div class="price-slider" id="priceSlider_1">
+
+                <div class="price-cell" id="price-repair-1">
+                  <div class="price-item__content">
+                    <div class="price-item__wrapper js-simplebar">
+                      <div class="price-item__img">
+                        <img src="img/price/price-cosmetic.jpg" alt="">
+                      </div>
+      
+                      <div class="price-item__body">
+                        <div class="price-item__cell price-item__cell--heading">
+                          <p class="price-item__title">Косметический ремонт</p>
+                          <p class="price-item__cost">от 3000 руб/м<sup>2</sup></p>
+                        </div>
+        
+                        <div class="price-item__cell">
+                          <p>
+                            Подходит тем, кто решил сделать детально проработанный интерьер с использованием натуральных и эксклюзивных материалов.
+                          </p>
+                        </div>
+
+                        <div class="price-item__cell ta-left">
+                          <p class="price-item__list-title">Включает в себя:</p>
+                          <ul>
+                            <li>Пакет косметический</li>
+                            <li>Пакет капитальный</li>
+                            <li>Укладка мозаики</li>
+                            <li>Установка видеонаблюдения</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="price-item__footer">
+                      <button class="button button-primary">Рассчитать</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-cell" id="price-repair-2">
+                  <div class="price-item__content">
+                    <div class="price-item__wrapper js-simplebar">
+                      <div class="price-item__img">
+                        <img src="img/price/price-full.jpg" alt="">
+                      </div>
+      
+                      <div class="price-item__body">
+                        <div class="price-item__cell price-item__cell--heading">
+                          <p class="price-item__title">Капитальный ремонт</p>
+                          <p class="price-item__cost">от 9000 руб/м<sup>2</sup></p>
+                        </div>
+        
+                        <div class="price-item__cell">
+                          <p>
+                            Подходит тем, кто решил сделать детально проработанный интерьер с использованием натуральных и эксклюзивных материалов.
+                          </p>
+                        </div>
+
+                        <div class="price-item__cell ta-left">
+                          <p class="price-item__list-title">Включает в себя:</p>
+                          <ul>
+                            <li>Пакет косметический</li>
+                            <li>Пакет капитальный</li>
+                            <li>Укладка мозаики</li>
+                            <li>Установка видеонаблюдения</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="price-item__footer">
+                      <button class="button button-primary">Рассчитать</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="price-cell" id="price-repair-3">
+                  <div class="price-item__content">
+                    <div class="price-item__wrapper js-simplebar">
+                      <div class="price-item__img">
+                        <img src="img/price/price-premium.jpg" alt="">
+                      </div>
+      
+                      <div class="price-item__body">
+                        <div class="price-item__cell price-item__cell--heading">
+                          <p class="price-item__title">Премиум ремонт</p>
+                          <p class="price-item__cost">от 14000 руб/м<sup>2</sup></p>
+                        </div>
+        
+                        <div class="price-item__cell">
+                          <p>
+                            Подходит тем, кто решил сделать детально проработанный интерьер с использованием натуральных и эксклюзивных материалов.
+                          </p>
+                        </div>
+
+                        <div class="price-item__cell ta-left">
+                          <p class="price-item__list-title">Включает в себя:</p>
+                          <ul>
+                            <li class="highlight td-u">Пакет косметический</li>
+                            <li class="highlight td-u">Пакет капитальный</li>
+                            <li>Укладка мозаики</li>
+                            <li>Установка видеонаблюдения</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="price-item__footer">
+                      <button class="button button-primary">Рассчитать</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="price-nav slider-nav js-price-nav--1">
+                <button class="nav-prev"></button>
+                <button class="nav-next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Modal repair price end -->
+
+
+    <!-- Modal design price -->
+    <div class="modalbox modalbox--price" id="modalPrice-2">
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <button type="button" class="button-modal-close"></button>
+            
+          <div class="modal-content">
+            <div class="price-wrapper">
+              <div class="price-slider" id="priceSlider_2">
+
+                <div class="price-cell" id="price-design-1">
+                  <div class="price-item__content">
+                    <div class="price-item__wrapper js-simplebar">
+                      <div class="price-item__img">
+                        <img src="img/price/price-plan.jpg" alt="">
+                      </div>
+      
+                      <div class="price-item__body">
+                        <div class="price-item__cell price-item__cell--heading">
+                          <p class="price-item__title">Планировочное решение</p>
+                          <p class="price-item__cost">от 790 руб/м<sup>2</sup></p>
+                        </div>
+        
+                        <div class="price-item__cell">
+                          <p>
+                            Подходит тем, кто решил сделать детально проработанный интерьер с использованием натуральных и эксклюзивных материалов.
+                          </p>
+                        </div>
+
+                        <div class="price-item__cell ta-left">
+                          <p class="price-item__list-title">Включает в себя:</p>
+                          <ul>
+                            <li>Пакет косметический</li>
+                            <li>Пакет капитальный</li>
+                            <li>Укладка мозаики</li>
+                            <li>Установка видеонаблюдения</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="price-item__footer">
+                      <button class="button button-primary">Рассчитать</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-cell" id="price-design-2">
+                  <div class="price-item__content">
+                    <div class="price-item__wrapper js-simplebar">
+                      <div class="price-item__img">
+                        <img src="img/price/price-sketch.jpg" alt="">
+                      </div>
+      
+                      <div class="price-item__body">
+                        <div class="price-item__cell price-item__cell--heading">
+                          <p class="price-item__title">Эскизный дизайн-проект</p>
+                          <p class="price-item__cost">от 1450 руб/м<sup>2</sup></p>
+                        </div>
+        
+                        <div class="price-item__cell">
+                          <p>
+                            Подходит тем, кто решил сделать детально проработанный интерьер с использованием натуральных и эксклюзивных материалов.
+                          </p>
+                        </div>
+
+                        <div class="price-item__cell ta-left">
+                          <p class="price-item__list-title">Включает в себя:</p>
+                          <ul>
+                            <li>Пакет косметический</li>
+                            <li>Пакет капитальный</li>
+                            <li>Укладка мозаики</li>
+                            <li>Установка видеонаблюдения</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="price-item__footer">
+                      <button class="button button-primary">Рассчитать</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="price-cell" id="price-design-3">
+                  <div class="price-item__content">
+                    <div class="price-item__wrapper js-simplebar">
+                      <div class="price-item__img">
+                        <img src="img/price/price-full-design.jpg" alt="">
+                      </div>
+      
+                      <div class="price-item__body">
+                        <div class="price-item__cell price-item__cell--heading">
+                          <p class="price-item__title">Полный дизайн проект</p>
+                          <p class="price-item__cost">от 1990 руб/м<sup>2</sup></p>
+                        </div>
+        
+                        <div class="price-item__cell">
+                          <p>
+                            Подходит тем, кто решил сделать детально проработанный интерьер с использованием натуральных и эксклюзивных материалов.
+                          </p>
+                        </div>
+
+                        <div class="price-item__cell ta-left">
+                          <p class="price-item__list-title">Включает в себя:</p>
+                          <ul>
+                            <li class="highlight td-u">Пакет косметический</li>
+                            <li class="highlight td-u">Пакет капитальный</li>
+                            <li>Укладка мозаики</li>
+                            <li>Установка видеонаблюдения</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="price-item__footer">
+                      <button class="button button-primary">Рассчитать</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="price-nav slider-nav js-price-nav--2">
+                <button class="nav-prev"></button>
+                <button class="nav-next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Modal design price end -->
+
+
+    <!-- Modal design price -->
+    <div class="modalbox modalbox--price" id="modalCV-1">
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <button type="button" class="button-modal-close"></button>
+            
+          <div class="modal-content">
+            <div class="price-wrapper">
+              <div class="price-slider" id="priceSlider_2">
+
+                <div class="cv-cell">
+                  <div class="cv-item__content">
+                    <div class="cv-item__wrapper js-simplebar"></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="cv-nav slider-nav js-cv-nav--1">
+                <button class="nav-prev"></button>
+                <button class="nav-next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Modal design price end -->
+
+
+    
+
+
   </div><!-- .page end -->
 
   <!-- Scripts -->
@@ -1211,9 +1517,12 @@
   <script src="js/vendor/jquery-3.3.1.min.js"></script>
   <script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="libs/flickity/flickity.pkgd.min.js"></script>
-  <script src="libs/micromodal/micromodal.min.js"></script>
+  <script src="libs/flickity/hash.js"></script>
+  <script src="libs/twentytwenty/polyfills/customEvent.js"></script>
+  <script src="libs/twentytwenty/polyfills/symbol.js"></script>
   <script src="libs/twentytwenty/jquery.event.move.min.js"></script>
   <script src="libs/twentytwenty/jquery.twentytwenty.min.js"></script>
+  <script src="libs/simplebar/simplebar.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

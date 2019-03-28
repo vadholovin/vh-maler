@@ -1,80 +1,89 @@
 @font-face {
-    font-family: 'Proba Pro';
-    src: url('../fonts/ProbaPro-Regular.woff2') format('woff2'),
-        url('../fonts/ProbaPro-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Proba Pro';
+  font-display: swap;
+  src: url('../fonts/ProbaPro-Regular.woff2') format('woff2'),
+    url('../fonts/ProbaPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proba Pro';
-    src: url('../fonts/ProbaPro-LightItalic.woff2') format('woff2'),
-        url('../fonts/ProbaPro-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
+  font-family: 'Proba Pro';
+  font-display: swap;
+  src: url('../fonts/ProbaPro-LightItalic.woff2') format('woff2'),
+    url('../fonts/ProbaPro-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Proba Pro';
-    src: url('../fonts/ProbaPro-Light.woff2') format('woff2'),
-        url('../fonts/ProbaPro-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+  font-family: 'Proba Pro';
+  font-display: swap;
+  src: url('../fonts/ProbaPro-Light.woff2') format('woff2'),
+    url('../fonts/ProbaPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proba Pro';
-    src: url('../fonts/ProbaPro-ExtraLightItalic.woff2') format('woff2'),
-        url('../fonts/ProbaPro-ExtraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
+  font-family: 'Proba Pro';
+  font-display: swap;
+  src: url('../fonts/ProbaPro-ExtraLightItalic.woff2') format('woff2'),
+    url('../fonts/ProbaPro-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Proba Pro';
-    src: url('../fonts/ProbaPro-Medium.woff2') format('woff2'),
-        url('../fonts/ProbaPro-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Proba Pro';
+  font-display: swap;
+  src: url('../fonts/ProbaPro-Medium.woff2') format('woff2'),
+    url('../fonts/ProbaPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proba Pro';
-    src: url('../fonts/ProbaPro-Bold.woff2') format('woff2'),
-        url('../fonts/ProbaPro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Proba Pro';
+  font-display: swap;
+  src: url('../fonts/ProbaPro-Bold.woff2') format('woff2'),
+    url('../fonts/ProbaPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proba Pro';
-    src: url('../fonts/ProbaPro-ExtraLight.woff2') format('woff2'),
-        url('../fonts/ProbaPro-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
+  font-family: 'Proba Pro';
+  font-display: swap;
+  src: url('../fonts/ProbaPro-ExtraLight.woff2') format('woff2'),
+    url('../fonts/ProbaPro-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Blender Pro';
-    src: url('../fonts/BlenderPro-Book.woff2') format('woff2'),
-        url('../fonts/BlenderPro-Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Blender Pro';
+  font-display: swap;
+  src: url('../fonts/BlenderPro-Book.woff2') format('woff2'),
+    url('../fonts/BlenderPro-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Blender Pro';
-    src: url('../fonts/BlenderPro-Bold.woff2') format('woff2'),
-        url('../fonts/BlenderPro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Blender Pro';
+  font-display: swap;
+  src: url('../fonts/BlenderPro-Bold.woff2') format('woff2'),
+    url('../fonts/BlenderPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Blender Pro';
-    src: url('../fonts/BlenderPro-Medium.woff2') format('woff2'),
-        url('../fonts/BlenderPro-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Blender Pro';
+  font-display: swap;
+  src: url('../fonts/BlenderPro-Medium.woff2') format('woff2'),
+    url('../fonts/BlenderPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
-

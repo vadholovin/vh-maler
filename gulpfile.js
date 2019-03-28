@@ -25,9 +25,9 @@ gulp.task('build', function () {
   gulp.src(config.src + config.css.src)
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-    /*.pipe(autoprefixer({
+    .pipe(autoprefixer({
       browsers: ['last 2 versions']
-    }))*/
+    }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.src + config.css.dest))
     .pipe(browserSync.reload({

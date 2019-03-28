@@ -1,0 +1,99 @@
+/*------------------------------------------*/
+/*  #MODALBOX
+/*------------------------------------------*/
+
+@keyframes appear {
+  0% {
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modalbox {
+  position: absolute;
+  top: 0;
+  left: -9999999px;
+  z-index: -999;
+  opacity: 0;
+}
+
+.modalbox.is-active {
+  position: static;
+  z-index: 1;
+  opacity: 1;
+  left: auto;
+  top: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100001;
+}
+
+.modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  max-height: 100vh;
+  overflow-y: auto;
+  opacity: 0;
+}
+
+.modalbox.is-active .modal-container {
+  animation: appear 0.3s linear 0.2s forwards;
+}
+
+.button-modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  z-index: 10;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 0;
+    border-top: 2px solid rgba(0,0,0,0.5);
+    transition: 0.2s ease-in-out;
+    transform-origin: center;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover{
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+  }
+}

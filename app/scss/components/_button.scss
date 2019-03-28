@@ -36,6 +36,7 @@
 
   &:hover,
   &:focus {
+    color: #fff;
     background-color: mix(#000, $green, 10%);
   }
 }

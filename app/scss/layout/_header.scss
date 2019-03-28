@@ -12,10 +12,18 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 100000;
+  transition: 0.2s ease-in-out;
 }
 
 .header--scroll {
   background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  .brand {
+    transform: scale(0.9);
+    transform-origin: left top;
+  }
 }
 
 .page-nav {
@@ -26,6 +34,7 @@
 
 .brand {
   display: block;
+  transition: 0.2s ease;
 }
 
 .brand--header {

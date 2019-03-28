@@ -16,11 +16,43 @@
 }
 
 .team-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   .nav-prev,
   .nav-next {
-    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 44px;
+    height: 66px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    transform: translateY(-50%);
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
   }
+
+  .nav-prev {
+    left: 0;
+    background-image: url(../img/icons/arrow-team-l@2x.png);
+  }
+
+  .nav-next {
+    right: 0;
+    background-image: url(../img/icons/arrow-team-r@2x.png);
+  }
+  
 }
 
 .team-slider {
@@ -69,6 +101,7 @@
 
 .team-item__body {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -80,6 +113,10 @@
   background-color: #fff;
   box-shadow: 0px 3px 6.65px 0.35px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  > * {
+    max-width: 100%;
+  }
 }
 
 .team-cell:hover {
