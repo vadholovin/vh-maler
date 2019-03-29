@@ -230,7 +230,7 @@
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
-    draggable: true,
+    draggable: false,
     imagesLoaded: true,
   }
 
@@ -258,7 +258,7 @@
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
-    draggable: true,
+    draggable: false,
     imagesLoaded: true,
   }
 
@@ -289,7 +289,7 @@
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
-    draggable: true,
+    draggable: false,
     imagesLoaded: true,
   }
 

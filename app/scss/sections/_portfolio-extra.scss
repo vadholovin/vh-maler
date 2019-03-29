@@ -32,6 +32,7 @@
 
 .work-extra__container {
   padding: 35px 50px 25px 25px;
+  width: 100%;
 }
 
 .button-minimize {
@@ -64,13 +65,18 @@
       position: absolute;
       top: 50%;
       right: 0;
-      transform: translateY(-50%) rotate(45deg);
+      transform: translateY(-50%) rotate(-45deg);
       width: 4px;
       height: 4px;
-      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
       border-left: 1px solid #000;
+      transition: transform 0.2s ease-in-out;
     }
   }
+}
+
+.work-extra.is-open .button-minimize span::after {
+  transform: translateY(-50%) rotate(-225deg);
 }
 
 .work-details__title {

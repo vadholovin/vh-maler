@@ -2501,6 +2501,7 @@ html, button, input, select, textarea,
 
 .work-extra__container {
   padding: 35px 50px 25px 25px;
+  width: 100%;
 }
 
 .button-minimize {
@@ -2537,12 +2538,21 @@ html, button, input, select, textarea,
   position: absolute;
   top: 50%;
   right: 0;
-  -webkit-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
   width: 4px;
   height: 4px;
-  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   border-left: 1px solid #000;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.work-extra.is-open .button-minimize span::after {
+  -webkit-transform: translateY(-50%) rotate(-225deg);
+          transform: translateY(-50%) rotate(-225deg);
 }
 
 .work-details__title {
