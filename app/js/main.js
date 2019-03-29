@@ -311,6 +311,104 @@
 
 
 
+
+/**
+ * OUTER PORTFOLIO CAROUSEL
+ */
+(function($) {
+
+  var options = {
+    wrapAround: true,
+    freeScroll: true,
+    prevNextButtons: false,
+    pageDots: false,
+    draggable: false,
+    imagesLoaded: true,
+  }
+
+  var $carousel = $('#cvSlider_1').flickity(options);
+
+  /**
+   * #CUSTOM UI
+   */
+  // previous
+  $('.js-cv-nav--1 .nav-prev').on( 'click', function() {
+    $carousel.flickity('previous');
+  });
+  // next
+  $('.js-cv-nav--1 .nav-next').on( 'click', function() {
+    $carousel.flickity('next');
+  });
+
+})(jQuery);
+
+
+
+/**
+ * INNER PORTFOLIO CAROUSEL
+ */
+(function($) {
+
+  var options = {
+    wrapAround: true,
+    freeScroll: true,
+    pageDots: false,
+    draggable: false,
+    imagesLoaded: true,
+    arrowShape: { 
+      x0: 10,
+      x1: 50, y1: 40,
+      x2: 60, y2: 30,
+      x3: 30
+    },
+  }
+
+  var $carousel = $('.inner-slider').flickity(options);
+  
+  function updateLink() {
+    var attrID = $(this).find('.is-selected').attr('id');
+    var link = '#' + attrID;
+    
+    $(this).next().find('.inner-thumb').removeClass('is-active');
+    $(this).next().find('[href="' + link + '"]' ).addClass('is-active');
+  }
+
+  updateLink();
+  $carousel.on( 'select.flickity', updateLink );
+
+  $('.inner-thumb').click(function () {
+
+    $(this).siblings().removeClass('is-active');
+    if ( !$(this).hasClass('is-active')) {
+      $(this).addClass('is-active');
+    }
+  });
+
+})(jQuery);
+
+
+
+/**
+ * PORTFOLIO DETAILS
+ */
+
+(function ($) {
+  
+  $('.button-minimize').click(function (e) { 
+    e.preventDefault();
+    
+    $(this).parent().toggleClass('is-open');
+    if($(this).parent().hasClass('is-open')) {
+      $(this).find('span').text('Свернуть');
+    } else {
+      $(this).find('span').text('Открыть');
+    }
+  });
+
+
+})(jQuery);
+
+
 /*----------------------------------------------------*/
 /*  #SWITCH APP IMAGES
 /*----------------------------------------------------*/

@@ -1,0 +1,82 @@
+/*------------------------------------------*/
+/*  #MODAL PRICE SLIDER
+/*------------------------------------------*/
+
+.modalbox--price {
+  
+  .modal-container {
+    max-width: 620px;
+  }
+
+  .price-wrapper {
+    position: relative;
+  }
+
+  .price-slider {
+    max-width: 470px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .price-cell {
+    max-height: 630px;
+    width: 470px;
+    margin-right: 50px;
+  }
+  
+  .price-item__wrapper {
+    height: 510px;
+    padding-left: 35px;
+    padding-right: 35px;
+    overflow-x: hidden !important;
+  }
+  
+  .price-item__list-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .price-item__cell li {
+    position: relative;
+    padding-left: 8px;
+    line-height: 1.5;
+  }
+  
+  .price-item__cell li:before {
+    content: '› ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $green;
+  }
+  
+  .price-item__content {
+    border: 0;
+    padding-top: 35px;
+  }
+
+  .price-item__img {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .price-item__body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .price-item__footer {
+    padding: 20px 0;
+    background-color: #e0e0e0;
+  
+    .button {
+      max-width: 410px;
+    }
+  }
+
+  .button-modal-close {
+    right: 80px;
+  }
+}

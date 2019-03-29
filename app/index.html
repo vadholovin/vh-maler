@@ -209,6 +209,77 @@
             <div class="work-cell">
               <div class="work">
                 <div class="work-img" style="background-image: url(img/portfolio/portfolio-1.jpg);"></div>
+
+                <div class="work-extra">
+                  <div class="work-extra__container">
+
+                    <div class="work-details">
+                      <h3 class="work-details__title">Ремонт квартиры 95м<sup>2</sup></h3>
+                      <div class="work-details__text">
+                        <p>
+                          <b>Задача:</b>
+                          Выполнить капитальный ремонт с полным дизайн проектом.
+                        </p>
+                      </div>
+  
+                      <div class="work-details__list pure-g">
+                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                          <span class="work-icon work-icon--house"></span>
+                          <b class="work-detail__title">Квартира</b>
+                          <p class="work-detail__desc">
+                            Вторичное жилье<br>
+                            (2 комнаты)
+                          </p>
+                        </div>
+                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                          <span class="work-icon work-icon--tool"></span>
+                          <b class="work-detail__title">Ремонт</b>
+                          <p class="work-detail__desc">
+                            Капитальный<br>
+                            (563 000 руб.)
+                          </p>
+                        </div>
+                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                          <span class="work-icon work-icon--clock"></span>
+                          <b class="work-detail__title">Срок</b>
+                          <p class="work-detail__desc">
+                            Ремонт + дизайн<br>
+                            (166 дней)
+                          </p>
+                        </div>
+                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                          <span class="work-icon work-icon--scheme"></span>
+                          <b class="work-detail__title">Дизайн</b>
+                          <p class="work-detail__desc">
+                            Полный проект<br>
+                            (147 250 руб.)
+                          </p>
+                        </div>
+                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                          <span class="work-icon work-icon--wall"></span>
+                          <b class="work-detail__title">Материалы</b>
+                          <p class="work-detail__desc">
+                            Черновые<br>
+                            (564 780 руб.)
+                          </p>
+                        </div>
+                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                          <span class="work-icon work-icon--car"></span>
+                          <b class="work-detail__title">Логистика</b>
+                          <p class="work-detail__desc">
+                            Доставки/мусор<br>
+                            (74 000 руб.)
+                          </p>
+                        </div>
+                      </div>
+
+                      <button class="button button-primary button-arrow" data-modal-trigger="modalCV-1">ПОДРОБНЕЕ</button>
+                    </div><!-- .work-details end -->
+
+                  </div>
+
+                  <button class="button-minimize"><span>Открыть</span></button>
+                </div>
               </div>
             </div>
             <div class="work-cell">
@@ -1120,7 +1191,7 @@
     <!-- CONTACTS SECTION -->
     <section class="contacts" id="contacts">
       <div class="map" id="map">
-        <iframe src="https://yandex.ua/map-widget/v1/-/CCqhIPLu" width="100%" height="100%" frameborder="1" allowfullscreen="true"></iframe>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A18b44043613511ce014babd4ec48bc2e37d60d898aff757e09a24d77e87d48af&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
       </div>
 
       <div class="container">
@@ -1478,21 +1549,279 @@
     </div><!-- Modal design price end -->
 
 
-    <!-- Modal design price -->
-    <div class="modalbox modalbox--price" id="modalCV-1">
+    <!-- Modal portfolio-1 -->
+    <div class="modalbox modalbox--cv" id="modalCV-1">
       <div class="modal-overlay">
         <div class="modal-container">
-          <button type="button" class="button-modal-close"></button>
+          <!-- <button type="button" class="button-modal-close"></button> -->
             
           <div class="modal-content">
-            <div class="price-wrapper">
-              <div class="price-slider" id="priceSlider_2">
+            <div class="cv-wrapper">
+              <div class="cv-slider" id="cvSlider_1">
 
                 <div class="cv-cell">
-                  <div class="cv-item__content">
-                    <div class="cv-item__wrapper js-simplebar"></div>
+                  <button type="button" class="button-modal-close"></button>
+                  <div class="cv-item__wrapper">
+                    <div class="flex-row">
+                      <div class="cv-item__left">
+                        <div class="inner-slider">
+                          <div class="inner-cell" id="inner-pic-1-1" style="background-image: url(img/portfolio/portfolio-1.jpg);"></div>
+                          <div class="inner-cell" id="inner-pic-1-2" style="background-image: url(img/portfolio/portfolio-2.jpg);"></div>
+                        </div>
+
+                        <div class="inner-thumbs__wrapper js-simplebar">
+                          <div class="inner-thumbs">
+                            <a href="#inner-pic-1-1" class="inner-thumb is-active">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-1-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cv-item__right">
+                        <div class="work-details">
+                          <h3 class="work-details__title">Ремонт квартиры 95м<sup>2</sup></h3>
+
+                          <div class="work-details__wrapper js-simplebar">
+                            <div class="work-details__text">
+                              <p>
+                                <b>Задача:</b>
+                                Выполнить капитальный ремонт с полным дизайн проектом.
+                              </p>
+                            </div>
+        
+                            <div class="work-details__list pure-g">
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--house"></span>
+                                <b class="work-detail__title">Квартира</b>
+                                <p class="work-detail__desc">
+                                  Вторичное жилье<br>
+                                  (2 комнаты)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--tool"></span>
+                                <b class="work-detail__title">Ремонт</b>
+                                <p class="work-detail__desc">
+                                  Капитальный<br>
+                                  (563 000 руб.)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--clock"></span>
+                                <b class="work-detail__title">Срок</b>
+                                <p class="work-detail__desc">
+                                  Ремонт + дизайн<br>
+                                  (166 дней)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--scheme"></span>
+                                <b class="work-detail__title">Дизайн</b>
+                                <p class="work-detail__desc">
+                                  Полный проект<br>
+                                  (147 250 руб.)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--wall"></span>
+                                <b class="work-detail__title">Материалы</b>
+                                <p class="work-detail__desc">
+                                  Черновые<br>
+                                  (564 780 руб.)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--car"></span>
+                                <b class="work-detail__title">Логистика</b>
+                                <p class="work-detail__desc">
+                                  Доставки/мусор<br>
+                                  (74 000 руб.)
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="work-details__text">
+                              <p>
+                                <b>Решение:</b>
+                                Основные особенности предлагаемого подхода связаны с тем, что главная задача сфокуси- рована на тщательном прочтении предлагаемого текста. Какие приемы смогут помочь нам сопрово- дить процесс чтения процессом мышления? Для того, чтобы чтение стало максимально осмысленным, надо, чтобы оно, во-первых, было достаточно медленным, позволяющим осознанно самому слушать читаемый текст, во-вторых, чтобы оно сопровождалось повышенной концентрацией внимания, чему, безусловно, способствует наличие дополнительного задания при чтении, например, по нахождению той или иной информации из текста.
+                              </p>
+                            </div>
+                          </div>
+    
+                        </div><!-- .work-details end -->
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </div><!-- .cv-cell end -->
+
+                <div class="cv-cell">
+                  <button type="button" class="button-modal-close"></button>
+                  <div class="cv-item__wrapper">
+                    <div class="flex-row">
+                      <div class="cv-item__left">
+                        <div class="inner-slider">
+                          <div class="inner-cell" id="inner-pic-2-1" style="background-image: url(img/portfolio/portfolio-1.jpg);"></div>
+                          <div class="inner-cell" id="inner-pic-2-2" style="background-image: url(img/portfolio/portfolio-2.jpg);"></div>
+                        </div>
+
+                        <div class="inner-thumbs__wrapper js-simplebar">
+                          <div class="inner-thumbs">
+                            <a href="#inner-pic-2-1" class="inner-thumb is-active">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-1" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-1.jpg" alt="">
+                            </a>
+                            <a href="#inner-pic-2-2" class="inner-thumb">
+                              <img src="img/portfolio/portfolio-2.jpg" alt="">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="cv-item__right">
+                        <div class="work-details">
+                          <h3 class="work-details__title">Ремонт квартиры 95м<sup>2</sup></h3>
+
+                          <div class="work-details__wrapper js-simplebar">
+                            <div class="work-details__text">
+                              <p>
+                                <b>Задача:</b>
+                                Выполнить капитальный ремонт с полным дизайн проектом.
+                              </p>
+                            </div>
+        
+                            <div class="work-details__list pure-g">
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--house"></span>
+                                <b class="work-detail__title">Квартира</b>
+                                <p class="work-detail__desc">
+                                  Вторичное жилье<br>
+                                  (2 комнаты)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--tool"></span>
+                                <b class="work-detail__title">Ремонт</b>
+                                <p class="work-detail__desc">
+                                  Капитальный<br>
+                                  (563 000 руб.)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--clock"></span>
+                                <b class="work-detail__title">Срок</b>
+                                <p class="work-detail__desc">
+                                  Ремонт + дизайн<br>
+                                  (166 дней)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--scheme"></span>
+                                <b class="work-detail__title">Дизайн</b>
+                                <p class="work-detail__desc">
+                                  Полный проект<br>
+                                  (147 250 руб.)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--wall"></span>
+                                <b class="work-detail__title">Материалы</b>
+                                <p class="work-detail__desc">
+                                  Черновые<br>
+                                  (564 780 руб.)
+                                </p>
+                              </div>
+                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                                <span class="work-icon work-icon--car"></span>
+                                <b class="work-detail__title">Логистика</b>
+                                <p class="work-detail__desc">
+                                  Доставки/мусор<br>
+                                  (74 000 руб.)
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="work-details__text">
+                              <p>
+                                <b>Решение:</b>
+                                Основные особенности предлагаемого подхода связаны с тем, что главная задача сфокуси- рована на тщательном прочтении предлагаемого текста. Какие приемы смогут помочь нам сопрово- дить процесс чтения процессом мышления? Для того, чтобы чтение стало максимально осмысленным, надо, чтобы оно, во-первых, было достаточно медленным, позволяющим осознанно самому слушать читаемый текст, во-вторых, чтобы оно сопровождалось повышенной концентрацией внимания, чему, безусловно, способствует наличие дополнительного задания при чтении, например, по нахождению той или иной информации из текста.
+                              </p>
+                            </div>
+                          </div>
+    
+                        </div><!-- .work-details end -->
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- .cv-cell end -->
 
               </div>
 
@@ -1515,7 +1844,6 @@
   <!-- Scripts -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="js/vendor/jquery-3.3.1.min.js"></script>
-  <script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="libs/flickity/flickity.pkgd.min.js"></script>
   <script src="libs/flickity/hash.js"></script>
   <script src="libs/twentytwenty/polyfills/customEvent.js"></script>
