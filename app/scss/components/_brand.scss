@@ -1,0 +1,25 @@
+/*------------------------------------------*/
+/*  #BRAND
+/*------------------------------------------*/
+
+.brand {
+  display: block;
+  transition: 0.2s ease;
+}
+
+.brand--header {
+  margin-right: auto;
+}
+
+.brand--footer {
+  margin-right: 60px;
+  flex-basis: 100%;
+
+  @media only screen and (min-width: 36em) {
+    flex-basis: auto;
+  }
+
+  @media only screen and (min-width: 80em) {
+    margin-right: auto;
+  }
+}

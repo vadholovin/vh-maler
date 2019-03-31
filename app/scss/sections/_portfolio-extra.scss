@@ -18,7 +18,7 @@
   overflow: hidden;
   transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out;
   width: 25px;
-  opacity: 0;
+  // opacity: 0;
 }
 
 .work-extra.is-open {
@@ -26,7 +26,8 @@
   opacity: 1;
 }
 
-.work-cell:hover .work-extra {
+.work-cell:hover .work-extra,
+.work-cell:focus .work-extra {
   opacity: 1;
 }
 

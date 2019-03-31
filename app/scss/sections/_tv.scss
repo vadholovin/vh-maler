@@ -17,6 +17,7 @@
 
 .tv-slider {
   // height: 630px;
+  position: relative;
 }
 
 .tv-nav {
@@ -37,28 +38,49 @@
   height: 0;
   width: 100%;
   padding-bottom: 55.26315789%;
+  background-color: #edeeef;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
 
-.tv-item__textbox {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 100%;
-  max-width: 300px;
-  padding: 32px 40px;
-  border-radius: 3px;
+.tv__textbox {
   font-size: rem(15);
   line-height: 1.66;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 5px 8.37px 0.63px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+
+  &--inner {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 100%;
+    max-width: 300px;
+    padding: 32px 40px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 8.37px 0.63px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+
+    @media only screen and (min-width: 62em) {
+      display: block;
+    }
+  }
+
+  &--outer {
+    margin-top: 40px;
+
+    @media only screen and (min-width: 62em) {
+      display: none;
+    }
+
+    .tv__textbox-title::after {
+      border-color: #000;
+    }
+  }
 }
 
-.tv-item__textbox-title {
+.tv__textbox-title {
   position: relative;
   font-family: $fontS;
   font-weight: bold;

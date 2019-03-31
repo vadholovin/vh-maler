@@ -13,17 +13,29 @@
   margin-bottom: 25px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
 
-.brand--footer {
-  margin-right: auto;
+  @media only screen and (min-width: 36em) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 .socials-block {
-  margin-left: 20px;
-  padding-left: 40px;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  text-align: right;
+  margin-top: 30px;
+  
+
+  @media only screen and (min-width: 36em) {
+    text-align: right;
+    margin-top: 0;
+  }
+
+  @media only screen and (min-width: 80em) {
+    margin-top: 0;
+    margin-left: 20px;
+    padding-left: 40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+  }
 }
 
 .button-outline--socials {
@@ -80,8 +92,13 @@
 }
 
 .page-footer__bottom-row {
-  align-items: center;
   color: #bcbcbc;
+
+  @media only screen and (min-width: 48em) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .footer-copyright {
@@ -93,6 +110,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 20px;
+
+  @media only screen and (min-width: 48em) {
+    margin-top: 0;
+  }
 }
 
 .dev-logo {

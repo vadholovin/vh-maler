@@ -8,7 +8,11 @@
 }
 
 .design-title {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+
+  @media only screen and (min-width: 62em) {
+    margin-bottom: 100px;
+  }
 }
 
 .design-instance {

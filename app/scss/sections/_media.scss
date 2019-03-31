@@ -23,31 +23,31 @@
 }
 
 .media-item {
-  display: flex;
-  flex-wrap: wrap;
   min-height: 416px;
   padding: 25px;
+  padding-bottom: 35px;
   border: 5px solid #edeeef;
   border-radius: 2px;
   background-color: #fff;
+
+  @media only screen and (min-width: 80em) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+  }
 }
 
 .media-item__img {
   position: relative;
-  flex: none;
   width: 100%;
   max-width: 275px;
-  margin-right: 36px;
-  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
 
-  img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    object-fit: cover;
+  @media only screen and (min-width: 80em) {
+    margin-right: 36px;
+    margin-bottom: 0;
   }
 }
 

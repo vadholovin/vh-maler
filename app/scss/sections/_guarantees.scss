@@ -41,17 +41,16 @@
 }
 
 .guarantee-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: table;
   padding-bottom: 26px;
   border-bottom: 1px solid #e0e0e0;
 }
 
 .guarantee-time {
-  flex: none;
-  margin-right: 30px;
-  padding: 16px 38px 16px 0;
+  display: table-cell;
+  vertical-align: middle;
+  width: 22%;
+  padding: 16px 16px 16px 0;
   border-right: 1px solid #e0e0e0;
   font-family: $fontS;
   font-weight: 500;
@@ -67,6 +66,12 @@
   b {
     font-weight: 500;
   }
+}
+
+.guarantee-logo {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 30px;
 }
 
 .guarantee-logo img {

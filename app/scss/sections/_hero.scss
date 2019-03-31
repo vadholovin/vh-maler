@@ -3,35 +3,62 @@
 /*------------------------------------------*/
 
 .hero {
-  padding-top: 180px;
-  padding-bottom: 135px;
+  padding-top: 150px;
+  padding-bottom: 100px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 150px;
+  }
+
+  @media only screen and (min-width: 80em) {
+    padding-top: 180px;
+    padding-bottom: 135px;
+  }
 }
 
 .hero-title-block {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   color: #fff;
+
+  @media only screen and (min-width: 62em) {
+    margin-bottom: 80px;
+  }
 }
 
 .hero-title {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   padding-bottom: 22px;
-  line-height: 1.3;
+  line-height: 1.1;
+
+  @media only screen and (min-width: 62em) {
+    margin-bottom: 32px;
+  }
 }
 
 .hero-title--big {
   display: block;
   font-weight: bold;
-  font-size: rem(52);
+  font-size: rem(48);
+  line-height: 1.2;
+
+  @media only screen and (min-width: 62em) {
+    font-size: rem(52);
+    line-height: 1.5;
+  }
 }
 
 .hero-title--small {
   display: block;
   font-weight: normal;
-  font-size: rem(28);
+  font-size: rem(24);
+
+  @media only screen and (min-width: 62em) {
+    font-size: rem(28);
+  }
 }
 
 .hero-title::after {
@@ -78,8 +105,17 @@
 .test-offer__desc {
   display: flex;
   align-items: center;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 1px solid #d1d1d1;
+  margin-top: 20px;
+  border-top: 1px solid #d1d1d1;
+  padding-top: 12px;
   color: #808080;
+
+  @media only screen and (min-width: 36em) {
+    margin-top: 0;
+    margin-left: 20px;
+    padding-top: 0;
+    padding-left: 20px;
+    border-top: 0;
+    border-left: 1px solid #d1d1d1;
+  }
 }
