@@ -50,11 +50,11 @@ $hamburger-types: (
   // emphatic,
   // emphatic-r,
   // minus,
-  slider,
+  // slider,
   // slider-r,
   // spin,
   // spin-r,
-  // spring,
+  spring,
   // spring-r,
   // stand,
   // stand-r,
@@ -89,11 +89,11 @@ $hamburger-types: (
 // @import "types/emphatic";
 // @import "types/emphatic-r";
 // @import "types/minus";
-@import "types/slider";
+// @import "types/slider";
 // @import "types/slider-r";
 // @import "types/spin";
 // @import "types/spin-r";
-// @import "types/spring";
+@import "types/spring";
 // @import "types/spring-r";
 // @import "types/stand";
 // @import "types/stand-r";

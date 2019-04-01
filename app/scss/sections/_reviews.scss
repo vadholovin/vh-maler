@@ -3,8 +3,8 @@
 /*------------------------------------------*/
 
 .reviews {
-  min-height: 700px;
   padding-top: 80px;
+  padding-bottom: 130px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -24,6 +24,11 @@
 }
 
 .reviews-nav {
+  display: none;
+
+  @media only screen and (min-width: 48em) {
+    display: flex;
+  }
 
   .nav-prev,
   .nav-next {
@@ -35,7 +40,12 @@
 }
 
 .reviews-slider {
-  padding: 0 98px;
+  padding: 0px;
+
+  @media only screen and (min-width: 48em) {
+    padding-left: 98px;
+    padding-right: 98px;
+  }
 
   .flickity-page-dots {
     bottom: -55px;
@@ -62,11 +72,17 @@
 .review {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 45px 30px 30px;
+  flex-direction: column;
+  padding: 30px;
   border: 1px solid #f7f7f7;
   border-radius: 3px;
   background-color: #ffffff;
   box-shadow: 0px 4px 7.52px 0.48px rgba(0, 0, 0, 0.5);
+
+  @media only screen and (min-width: 62em) {
+    flex-direction: row;
+    padding-right: 45px;
+  }
 }
 
 .review-img {
@@ -74,14 +90,25 @@
   flex: none;
   width: 100%;
   max-width: 210px;
-  margin-right: 36px;
+  height: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  border-radius: 50%;
   overflow: hidden;
+
+  @media only screen and (min-width: 62em) {
+    margin-right: 36px;
+    margin-bottom: 0;
+    height: 285px;
+    border-radius: 0;
+  }
 
   img {
     position: absolute;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
     bottom: 0;
     width: 100%;
     object-fit: cover;
@@ -143,21 +170,30 @@
 }
 
 .review-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: table;
+  width: 100%;
   padding-top: 15px;
 }
 
+.review-footer__cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20px;
+  white-space: nowrap;
+
+  &:last-child {
+    padding: 10px 0 10px 20px;
+    border-left: 1px solid #e0e0e0;
+    width: 99%;
+  }
+}
+
 .review-logo {
-  flex: none;
   display: inline-block;
+  width: 52px;
 }
 
 .review-link {
-  margin-left: 20px;
-  padding: 10px 0 10px 20px;
-  border-left: 1px solid #e0e0e0;
   font-size: rem(14);
   line-height: 1;
   color: $green;

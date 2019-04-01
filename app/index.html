@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="libs/animate.css/animate.min.css">
   <link rel="stylesheet" href="libs/flickity/flickity.min.css">
   <link rel="stylesheet" href="libs/twentytwenty/twentytwenty.min.css">
-  <link rel="stylesheet" href="libs/simplebar/simplebar.min.css">
+  <link rel="stylesheet" href="libs/perfect-scrollbar/css/perfect-scrollbar.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,7 +26,7 @@
             <img src="img/logo.svg" width="134" height="32" alt="">
           </a>
 
-          <button class="hamburger hamburger--slider" type="button"
+          <button class="hamburger hamburger--spring" type="button"
             aria-label="Menu" aria-controls="navigation">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
@@ -237,7 +237,7 @@
               <div class="work">
                 <div class="work-img" data-flickity-bg-lazyload="img/portfolio/portfolio-1.jpg"></div>
 
-                <div class="work-extra">
+                <div class="work-extra is-open">
                   <div class="work-extra__container">
 
                     <div class="work-details">
@@ -250,7 +250,7 @@
                       </div>
   
                       <div class="work-details__list pure-g">
-                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                        <div class="pure-u-1 pure-u-sm-1-3 work-detail">
                           <span class="work-icon work-icon--house"></span>
                           <b class="work-detail__title">Квартира</b>
                           <p class="work-detail__desc">
@@ -258,7 +258,7 @@
                             (2 комнаты)
                           </p>
                         </div>
-                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                        <div class="pure-u-1 pure-u-sm-1-3 work-detail">
                           <span class="work-icon work-icon--tool"></span>
                           <b class="work-detail__title">Ремонт</b>
                           <p class="work-detail__desc">
@@ -266,7 +266,7 @@
                             (563 000 руб.)
                           </p>
                         </div>
-                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                        <div class="pure-u-1 pure-u-sm-1-3 work-detail">
                           <span class="work-icon work-icon--clock"></span>
                           <b class="work-detail__title">Срок</b>
                           <p class="work-detail__desc">
@@ -274,7 +274,7 @@
                             (166 дней)
                           </p>
                         </div>
-                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                        <div class="pure-u-1 pure-u-sm-1-3 work-detail">
                           <span class="work-icon work-icon--scheme"></span>
                           <b class="work-detail__title">Дизайн</b>
                           <p class="work-detail__desc">
@@ -282,7 +282,7 @@
                             (147 250 руб.)
                           </p>
                         </div>
-                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                        <div class="pure-u-1 pure-u-sm-1-3 work-detail">
                           <span class="work-icon work-icon--wall"></span>
                           <b class="work-detail__title">Материалы</b>
                           <p class="work-detail__desc">
@@ -290,7 +290,7 @@
                             (564 780 руб.)
                           </p>
                         </div>
-                        <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                        <div class="pure-u-1 pure-u-sm-1-3 work-detail">
                           <span class="work-icon work-icon--car"></span>
                           <b class="work-detail__title">Логистика</b>
                           <p class="work-detail__desc">
@@ -305,7 +305,7 @@
 
                   </div>
 
-                  <button class="button-minimize"><span>Открыть</span></button>
+                  <button class="button-minimize"><span>Свернуть</span></button>
                 </div>
               </div>
             </div>
@@ -843,7 +843,7 @@
           </ul>
 
           <div class="app-controls pure-g">
-            <div class="pure-u-1 pure-u-xl-1-3 app-controls__col">
+            <div class="pure-u-1 pure-u-md-1-3 app-controls__col">
               <div class="app-controls__text">
                 <p>
                   Используем приложение, которое даёт возможность полностью контролировать финансовые движения внутри вашего объекта, между
@@ -858,7 +858,7 @@
               </div>
             </div>
 
-            <div class="pure-u-1 pure-u-xl-1-3 app-controls__col">
+            <div class="pure-u-1 pure-u-md-1-3 app-controls__col">
               <div class="app-control" id="app-img--price">
                 <span class="app-icon app-icon-price"></span>
                 <span class="app-control__title">Прайс лист</span>
@@ -878,7 +878,7 @@
               </div>
             </div>
 
-            <div class="pure-u-1 pure-u-xl-1-3 app-controls__col">
+            <div class="pure-u-1 pure-u-md-1-3 app-controls__col">
               <div class="app-control" id="app-img--payment">
                 <span class="app-icon app-icon-payment"></span>
                 <span class="app-control__title">График платежей</span>
@@ -1031,21 +1031,26 @@
                   </div>
   
                   <div class="review-footer">
-                    <span class="review-logo">
-                      <img
-                        src="img/yandex-logo.png"
-                        srcset="img/yandex-logo.png 1x,
-                        img/yandex-logo@2x.png 1.5x,
-                        img/yandex-logo@2x.png 2x"
-                        width="52" height="20" alt="" >
-                    </span>
-  
-                    <a href="#" class="review-link"><span>Читать отзыв на Яндексе</span></a>
+                    <div class="review-footer__cell">
+                      <span class="review-logo">
+                        <img
+                          src="img/yandex-logo.png"
+                          srcset="img/yandex-logo.png 1x,
+                          img/yandex-logo@2x.png 1.5x,
+                          img/yandex-logo@2x.png 2x"
+                          width="52" height="20" alt="" >
+                      </span>
+                    </div>
+                    
+                    <div class="review-footer__cell">
+                      <a href="#" class="review-link"><span>Читать отзыв на Яндексе</span></a>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <div class="review-cell">
               <div class="review">
                 <div class="review-img">
@@ -1065,16 +1070,21 @@
                   </div>
   
                   <div class="review-footer">
-                    <span class="review-logo">
-                      <img
-                        src="img/yandex-logo.png"
-                        srcset="img/yandex-logo.png 1x,
-                        img/yandex-logo@2x.png 1.5x,
-                        img/yandex-logo@2x.png 2x"
-                        width="52" height="20" alt="" >
-                    </span>
-  
-                    <a href="#" class="review-link"><span>Читать отзыв на Яндексе</span></a>
+                    <div class="review-footer__cell">
+                      <span class="review-logo">
+                        <img
+                          src="img/yandex-logo.png"
+                          srcset="img/yandex-logo.png 1x,
+                          img/yandex-logo@2x.png 1.5x,
+                          img/yandex-logo@2x.png 2x"
+                          width="52" height="20" alt="" >
+                      </span>
+                    </div>
+                    
+                    <div class="review-footer__cell">
+                      <a href="#" class="review-link"><span>Читать отзыв на Яндексе</span></a>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -1324,15 +1334,15 @@
     <div class="modalbox modalbox--price" id="modalPrice-1">
       <div class="modal-overlay">
         <div class="modal-container">
-          <button type="button" class="button-modal-close"></button>
             
           <div class="modal-content">
             <div class="price-wrapper">
               <div class="price-slider" id="priceSlider_1">
 
                 <div class="price-cell" id="price-repair-1">
+                  <button type="button" class="button-modal-close"></button>
                   <div class="price-item__content">
-                    <div class="price-item__wrapper js-simplebar">
+                    <div class="price-item__wrapper js-custombar">
                       <div class="price-item__img">
                         <img src="img/price/price-cosmetic.jpg" alt="">
                       </div>
@@ -1368,8 +1378,9 @@
                 </div>
 
                 <div class="price-cell" id="price-repair-2">
+                  <button type="button" class="button-modal-close"></button>
                   <div class="price-item__content">
-                    <div class="price-item__wrapper js-simplebar">
+                    <div class="price-item__wrapper js-custombar">
                       <div class="price-item__img">
                         <img src="img/price/price-full.jpg" alt="">
                       </div>
@@ -1405,8 +1416,9 @@
                 </div>
                 
                 <div class="price-cell" id="price-repair-3">
+                  <button type="button" class="button-modal-close"></button>
                   <div class="price-item__content">
-                    <div class="price-item__wrapper js-simplebar">
+                    <div class="price-item__wrapper js-custombar">
                       <div class="price-item__img">
                         <img src="img/price/price-premium.jpg" alt="">
                       </div>
@@ -1458,15 +1470,15 @@
     <div class="modalbox modalbox--price" id="modalPrice-2">
       <div class="modal-overlay">
         <div class="modal-container">
-          <button type="button" class="button-modal-close"></button>
             
           <div class="modal-content">
             <div class="price-wrapper">
               <div class="price-slider" id="priceSlider_2">
 
                 <div class="price-cell" id="price-design-1">
+                  <button type="button" class="button-modal-close"></button>
                   <div class="price-item__content">
-                    <div class="price-item__wrapper js-simplebar">
+                    <div class="price-item__wrapper js-custombar">
                       <div class="price-item__img">
                         <img src="img/price/price-plan.jpg" alt="">
                       </div>
@@ -1502,8 +1514,9 @@
                 </div>
 
                 <div class="price-cell" id="price-design-2">
+                  <button type="button" class="button-modal-close"></button>
                   <div class="price-item__content">
-                    <div class="price-item__wrapper js-simplebar">
+                    <div class="price-item__wrapper js-custombar">
                       <div class="price-item__img">
                         <img src="img/price/price-sketch.jpg" alt="">
                       </div>
@@ -1539,8 +1552,9 @@
                 </div>
                 
                 <div class="price-cell" id="price-design-3">
+                  <button type="button" class="button-modal-close"></button>
                   <div class="price-item__content">
-                    <div class="price-item__wrapper js-simplebar">
+                    <div class="price-item__wrapper js-custombar">
                       <div class="price-item__img">
                         <img src="img/price/price-full-design.jpg" alt="">
                       </div>
@@ -1592,8 +1606,7 @@
     <div class="modalbox modalbox--cv" id="modalCV-1">
       <div class="modal-overlay">
         <div class="modal-container">
-          <!-- <button type="button" class="button-modal-close"></button> -->
-            
+          
           <div class="modal-content">
             <div class="cv-wrapper">
               <div class="cv-slider" id="cvSlider_1">
@@ -1608,42 +1621,9 @@
                           <div class="inner-cell" id="inner-pic-1-2" style="background-image: url(img/portfolio/portfolio-2.jpg);"></div>
                         </div>
 
-                        <div class="inner-thumbs__wrapper js-simplebar">
+                        <div class="inner-thumbs__wrapper js-custombar">
                           <div class="inner-thumbs">
                             <a href="#inner-pic-1-1" class="inner-thumb is-active">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-1" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-1" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-1" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-1" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-1-1" class="inner-thumb">
                               <img src="img/portfolio/portfolio-1.jpg" alt="">
                             </a>
                             <a href="#inner-pic-1-2" class="inner-thumb">
@@ -1657,7 +1637,7 @@
                         <div class="work-details">
                           <h3 class="work-details__title">Ремонт квартиры 95м<sup>2</sup></h3>
 
-                          <div class="work-details__wrapper js-simplebar">
+                          <div class="work-details__wrapper js-custombar">
                             <div class="work-details__text">
                               <p>
                                 <b>Задача:</b>
@@ -1666,7 +1646,7 @@
                             </div>
         
                             <div class="work-details__list pure-g">
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--house"></span>
                                 <b class="work-detail__title">Квартира</b>
                                 <p class="work-detail__desc">
@@ -1674,7 +1654,7 @@
                                   (2 комнаты)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--tool"></span>
                                 <b class="work-detail__title">Ремонт</b>
                                 <p class="work-detail__desc">
@@ -1682,7 +1662,7 @@
                                   (563 000 руб.)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--clock"></span>
                                 <b class="work-detail__title">Срок</b>
                                 <p class="work-detail__desc">
@@ -1690,7 +1670,7 @@
                                   (166 дней)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--scheme"></span>
                                 <b class="work-detail__title">Дизайн</b>
                                 <p class="work-detail__desc">
@@ -1698,7 +1678,7 @@
                                   (147 250 руб.)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--wall"></span>
                                 <b class="work-detail__title">Материалы</b>
                                 <p class="work-detail__desc">
@@ -1706,7 +1686,7 @@
                                   (564 780 руб.)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--car"></span>
                                 <b class="work-detail__title">Логистика</b>
                                 <p class="work-detail__desc">
@@ -1740,42 +1720,9 @@
                           <div class="inner-cell" id="inner-pic-2-2" style="background-image: url(img/portfolio/portfolio-2.jpg);"></div>
                         </div>
 
-                        <div class="inner-thumbs__wrapper js-simplebar">
+                        <div class="inner-thumbs__wrapper js-custombar">
                           <div class="inner-thumbs">
                             <a href="#inner-pic-2-1" class="inner-thumb is-active">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-1" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-1" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-1" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-1" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-1.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-2" class="inner-thumb">
-                              <img src="img/portfolio/portfolio-2.jpg" alt="">
-                            </a>
-                            <a href="#inner-pic-2-1" class="inner-thumb">
                               <img src="img/portfolio/portfolio-1.jpg" alt="">
                             </a>
                             <a href="#inner-pic-2-2" class="inner-thumb">
@@ -1789,7 +1736,7 @@
                         <div class="work-details">
                           <h3 class="work-details__title">Ремонт квартиры 95м<sup>2</sup></h3>
 
-                          <div class="work-details__wrapper js-simplebar">
+                          <div class="work-details__wrapper js-custombar">
                             <div class="work-details__text">
                               <p>
                                 <b>Задача:</b>
@@ -1798,7 +1745,7 @@
                             </div>
         
                             <div class="work-details__list pure-g">
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--house"></span>
                                 <b class="work-detail__title">Квартира</b>
                                 <p class="work-detail__desc">
@@ -1806,7 +1753,7 @@
                                   (2 комнаты)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--tool"></span>
                                 <b class="work-detail__title">Ремонт</b>
                                 <p class="work-detail__desc">
@@ -1814,7 +1761,7 @@
                                   (563 000 руб.)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--clock"></span>
                                 <b class="work-detail__title">Срок</b>
                                 <p class="work-detail__desc">
@@ -1822,7 +1769,7 @@
                                   (166 дней)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--scheme"></span>
                                 <b class="work-detail__title">Дизайн</b>
                                 <p class="work-detail__desc">
@@ -1830,7 +1777,7 @@
                                   (147 250 руб.)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--wall"></span>
                                 <b class="work-detail__title">Материалы</b>
                                 <p class="work-detail__desc">
@@ -1838,7 +1785,7 @@
                                   (564 780 руб.)
                                 </p>
                               </div>
-                              <div class="pure-u-1 pure-u-xl-1-3 work-detail">
+                              <div class="pure-u-1-2 pure-u-sm-1-3 work-detail">
                                 <span class="work-icon work-icon--car"></span>
                                 <b class="work-detail__title">Логистика</b>
                                 <p class="work-detail__desc">
@@ -1891,7 +1838,7 @@
   <script src="libs/twentytwenty/polyfills/symbol.js"></script>
   <script src="libs/twentytwenty/jquery.event.move.min.js"></script>
   <script src="libs/twentytwenty/jquery.twentytwenty.min.js"></script>
-  <script src="libs/simplebar/simplebar.min.js"></script>
+  <script src="libs/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

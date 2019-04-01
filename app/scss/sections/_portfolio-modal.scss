@@ -14,31 +14,39 @@
 }
 
 .cv-slider {
+  width: 95%;
   max-width: 1010px;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  // height: 600px;
 }
 
 .cv-cell {
-  max-height: 600px;
-  width: 1010px;
+  width: 100%;
   margin-right: 50px;
   background-color: #fff;
 }
 
 .cv-item__wrapper {
-  height: 600px;
-  padding: 35px;
-  padding-right: 0;
+  padding: 30px;
+
+  @media only screen and (min-width: 62em) {
+    padding: 35px;
+    padding-right: 0;
+  }
 }
 
 .cv-item__left {
-  flex-basis: 59%;
-  max-width: 59%;
+  width: 100%;
+
+  @media only screen and (min-width: 62em) {
+    flex-basis: 59%;
+    max-width: 59%;
+  }
 }
 
 .inner-slider {
+  margin-bottom: 14px;
 
   .flickity-button {
     background: transparent !important;
@@ -54,20 +62,31 @@
   .flickity-button:hover .flickity-button-icon {
     opacity: 1;
   }
+  
 }
 
 .inner-cell {
   width: 100%;
   height: 0;
-  padding-top: 62.5%;
+  padding-top: 40%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 62.5%;
+  }
 }
 
 .inner-thumbs__wrapper {
   height: 176px;
   max-width: 100%;
+  width: 100%;
+  display: none;
+
+  @media only screen and (min-width: 62em) {
+    display: block;
+  }
 }
 
 .inner-thumbs {
@@ -80,7 +99,7 @@
 
 .inner-thumb {
   display: block;
-  margin: 14px 7px 0 7px;
+  margin: 0 7px 14px 7px;
   overflow: hidden;
   flex-basis: calc(20% - 14px);
   max-width: calc(20% - 14px);
@@ -100,17 +119,47 @@
 }
 
 .cv-item__right {
-  flex-basis: 41%;
-  max-width: 41%;
+  width: 100%;
+
+  @media only screen and (min-width: 62em) {
+    flex-basis: 41%;
+    max-width: 41%;
+  }
 
   .work-details__title {
-    margin-left: 40px;
-    margin-right: 35px;
+
+    @media only screen and (min-width: 62em) {
+      margin-left: 40px;
+      margin-right: 35px;
+    }
   }
 }
 
 .work-details__wrapper {
-  height: 455px;
-  padding-right: 35px;
-  padding-left: 40px;
+  position: relative;
+  height: 350px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+  @media only screen and (min-width: 62em) {
+    padding-left: 40px;
+    padding-right: 35px;
+    height: 455px;
+  }
+}
+
+.cv-cell .button-modal-close {
+  right: 5px;
+}
+
+.cv-nav {
+
+  .nav-prev,
+  .nav-next {
+    opacity: 0.8;
+
+    @media only screen and (min-width: 80em) {
+      opacity: 0.5;
+    }
+  }
 }

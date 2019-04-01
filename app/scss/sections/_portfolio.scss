@@ -23,9 +23,18 @@
 }
 
 .work-cell {
-  width: 55.885417%;
-  margin-right: 10px;
+  width: 95%;
+  margin-right: 40px;
   // min-height: 520px;
+
+  @media only screen and (min-width: 48em) {
+    width: 70%;
+    margin-right: 10px;
+  }
+
+  @media only screen and (min-width: 80em) {
+    width: 55.885417%;
+  }
 }
 
 .work-cell:not([class*=is-selected]) {
@@ -41,10 +50,16 @@
 
 .work {
   position: relative;
-  height: 0;
-  // padding-top: 59.645852749%;
-  height: 640px;
+  height: 480px;
+  overflow: hidden;
 
+  @media only screen and (min-width: 48em) {
+    height: 550px;
+  }
+
+  @media only screen and (min-width: 62em) {
+    height: 640px;
+  }
 }
 
 .work-img {
@@ -65,20 +80,31 @@
 .works-nav {
   position: absolute;
   bottom: 65px;
-  left: 52.86%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
+  
+
+  @media only screen and (min-width: 80em) {
+    left: 52.86%;
+    transform: translateX(0);
+  }
 
   .nav-prev,
   .nav-next {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 185px;
+    width: 120px;
     height: 66px;
     border: 10px solid rgba(0,0,0,0.1);
     border-radius: 2px;
     background-color: #fff;
+
+    @media only screen and (min-width: 48em) {
+      width: 185px;
+    }
 
     &::after {
       content: '';
@@ -123,9 +149,18 @@
 }
 
 .bna-cell {
-  width: 39.0625%;
-  margin-right: 10px;
+  width: 95%;
+  margin-right: 40px;
   box-shadow: 0px 5px 8.37px 0.63px rgba(0, 0, 0, 0.15);
+
+  @media only screen and (min-width: 48em) {
+    width: 70%;
+    margin-right: 10px;
+  }
+
+  @media only screen and (min-width: 62em) {
+    width: 750px;
+  }
 }
 
 .bna-cell:not([class*=is-selected]) {
@@ -141,17 +176,25 @@
 }
 
 .bna-item {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px 40px 30px 40px;
+  display: table;
+  width: 100%;
+  padding: 20px;
   border: 1px solid #f7f7f7;
   border-radius: 2px;
   background-color: #fff;
+
+  @media only screen and (min-width: 48em) {
+    padding: 30px 30px 20px 30px;
+  }
+
+  @media only screen and (min-width: 62em) {
+    padding: 40px 40px 30px 40px;
+  }
 }
 
 .bna-item__col {
-  flex-basis: 50%;
-  max-width: 50%;
+  display: table-cell;
+  width: 50%;
 
   &:first-child {
     padding-right: 20px;
@@ -164,13 +207,19 @@
 
 .bna-item__text {
   display: block;
-  padding-top: 35px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 15px;
   font-weight: 200;
-  font-size: rem(36);
+  font-size: rem(24);
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
+
+  @media only screen and (min-width: 62em) {
+    font-size: rem(36);
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
 }
 
 .bna-nav {
@@ -178,11 +227,19 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 1;
+
+  @media only screen and (min-width: 48em) {
+    width: 70%;
+  }
+
+  @media only screen and (min-width: 62em) {
+    width: 750px;
+  }
 
   .nav-prev,
   .nav-next {
@@ -206,11 +263,19 @@
     left: 0;
     background-image: url(../img/icons/bna-left@2x.png);
     transform: translateY(-50%);
+
+    @media only screen and (min-width: 48em) {
+      left: -45px;
+    }
   }
 
   .nav-next {
     right: 0;
     background-image: url(../img/icons/bna-right@2x.png);
     transform: translateY(-50%);
+
+    @media only screen and (min-width: 48em) {
+      right: -45px;
+    }
   }
 }

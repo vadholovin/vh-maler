@@ -49,8 +49,8 @@
 .modal-container {
   position: relative;
   width: 100%;
-  max-width: 500px;
   max-height: 100vh;
+  padding-top: 10px;
   overflow-y: auto;
   opacity: 0;
 }

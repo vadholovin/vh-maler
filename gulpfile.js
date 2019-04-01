@@ -26,7 +26,8 @@ gulp.task('build', function () {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers: ['last 2 versions']
+      browsers: ['last 2 versions'],
+      remove: false
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.src + config.css.dest))

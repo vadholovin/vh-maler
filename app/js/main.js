@@ -51,18 +51,6 @@
 
 
 /*----------------------------------------------------*/
-/*  #MAKE PORTFOLIO SLIDES FOCUSABLE
-/*----------------------------------------------------*/
-
-(function ($) {
-
-  $('.work-cell').attr('tabindex', -1);
-
-})(jQuery);
-
-
-
-/*----------------------------------------------------*/
 /*  #SWITCH APP IMAGES
 /*----------------------------------------------------*/
 
@@ -209,13 +197,20 @@ jQuery(document).ready(function($){
 
 
 /*----------------------------------------------------*/
-/*  #SIMPLEBAR INIT
+/*  #PERFECT-SCROLLBAR INIT
 /*----------------------------------------------------*/
 
 (function ($) {
 
-  $('.js-simplebar').each(function(index, el) {
-    new SimpleBar(el, {autoHide: false});
+  $('.js-custombar').each(function() {
+    const ps = new PerfectScrollbar($(this)[0], {
+      wheelSpeed: 1,
+      minScrollbarLength: 20
+    });
+
+    $(window).resize(function () { 
+      ps.update();
+    });
   });
 
 })(jQuery);
@@ -242,7 +237,9 @@ jQuery(document).ready(function($){
     // imagesLoaded: true,
     bgLazyLoad: true,
     bgLazyLoad: 1,
-  }
+    selectedAttraction: 0.2,
+    friction: 0.8,
+  };
 
   var $carousel = $('#worksSlider_1').flickity(options);
 
@@ -272,7 +269,9 @@ jQuery(document).ready(function($){
     // imagesLoaded: true,
     bgLazyLoad: true,
     bgLazyLoad: 1,
-  }
+    selectedAttraction: 0.2,
+    friction: 0.8,
+  };
 
   var $carousel = $('#worksSlider_2').flickity(options);
 
@@ -305,7 +304,9 @@ jQuery(document).ready(function($){
     imagesLoaded: true,
     lazyLoad: true,
     lazyLoad: 2,
-  }
+    selectedAttraction: 0.2,
+    friction: 0.8,
+  };
 
   var $carousel = $('#bnaSlider').flickity(options);
 
@@ -338,7 +339,10 @@ jQuery(document).ready(function($){
     pageDots: false,
     draggable: false,
     imagesLoaded: true,
-  }
+    selectedAttraction: 0.2,
+    friction: 0.8,
+    // setGallerySize: false,
+  };
 
   var $carousel = $('#cvSlider_1').flickity(options);
 
@@ -369,17 +373,20 @@ jQuery(document).ready(function($){
     pageDots: false,
     draggable: false,
     imagesLoaded: true,
+    hash: true,
+    selectedAttraction: 0.2,
+    friction: 0.8,
     arrowShape: { 
       x0: 10,
       x1: 50, y1: 40,
       x2: 60, y2: 30,
       x3: 30
     },
-  }
+  };
 
   var $carousel = $('.inner-slider').flickity(options);
   
-  function updateLink() {
+  function slideByLink() {
     var attrID = $(this).find('.is-selected').attr('id');
     var link = '#' + attrID;
     
@@ -387,8 +394,8 @@ jQuery(document).ready(function($){
     $(this).next().find('[href="' + link + '"]' ).addClass('is-active');
   }
 
-  updateLink();
-  $carousel.on( 'select.flickity', updateLink );
+  slideByLink();
+  $carousel.on( 'select.flickity', slideByLink );
 
   $('.inner-thumb').click(function () {
 
@@ -441,7 +448,9 @@ jQuery(document).ready(function($){
     draggable: false,
     imagesLoaded: true,
     hash: true,
-  }
+    selectedAttraction: 0.2,
+    friction: 0.8,
+  };
 
   var $carousel = $('#priceSlider_1').flickity(options);
 
@@ -473,7 +482,9 @@ jQuery(document).ready(function($){
     draggable: false,
     imagesLoaded: true,
     hash: true,
-  }
+    selectedAttraction: 0.2,
+    friction: 0.8,
+  };
 
   var $carousel = $('#priceSlider_2').flickity(options);
 
@@ -535,23 +546,11 @@ jQuery(document).ready(function($){
     pauseAutoPlayOnHover: false,
     bgLazyLoad: true,
     bgLazyLoad: 1,
-  }
+    selectedAttraction: 0.2,
+    friction: 0.8,
+  };
 
   var $carousel = $('#tvSlider').flickity(options);
-
-  /**
-   * #CUSTOM UI
-   */
-  // previous
-  /*
-  $('.tv-nav .nav-prev').on( 'click', function() {
-    $carousel.flickity('previous');
-  });
-  // next
-  $('.tv-nav .nav-next').on( 'click', function() {
-    $carousel.flickity('next');
-  });
-  */
 
 })(jQuery);
 
@@ -570,7 +569,9 @@ jQuery(document).ready(function($){
     pageDots: true,
     draggable: true,
     imagesLoaded: true,
-  }
+    selectedAttraction: 0.2,
+    friction: 0.8,
+  };
 
   var $carousel = $('#reviewsSlider').flickity(options);
 
@@ -602,9 +603,15 @@ jQuery(document).ready(function($){
     prevNextButtons: false,
     pageDots: false,
     draggable: false,
-    cellAlign: 'left',
+    cellAlign: 'center',
     setGallerySize: false,
     imagesLoaded: true,
+    selectedAttraction: 0.2,
+    friction: 0.8,
+  };
+
+  if ( matchMedia('screen and (min-width: 768px)').matches ) {
+    options.cellAlign = 'left';
   }
 
   var $carousel = $('#teamSlider').flickity(options);

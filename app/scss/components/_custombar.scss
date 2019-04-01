@@ -1,0 +1,23 @@
+/*------------------------------------------*/
+/*  #CUSTOMBAR
+/*------------------------------------------*/
+
+.ps .ps__rail-y {
+  background-color: #efefef !important;
+  opacity: 1 !important;
+  width: 6px !important;
+}
+
+.ps__thumb-y {
+  background-color: #9a9a9a !important;
+  width: 3px !important;
+  opacity: 1 !important;
+}
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  background-color: #9a9a9a !important;
+  width: 3px !important;
+  opacity: 1 !important;
+}

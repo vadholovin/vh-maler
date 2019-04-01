@@ -7,6 +7,7 @@
   padding-top: 18px;
   font: bold rem(30) $fontS;
   line-height: 1.3;
+  z-index: 0;
 
   &::after {
     position: absolute;
@@ -20,10 +21,16 @@
 
 .section-title--blur {
   position: absolute;
-  top: -10px;
+  top: 0;
   left: 5px;
-  font-size: rem(80);
+  font-size: rem(50);
   text-transform: uppercase;
   color: transparent;
   text-shadow: 0 0 5px rgba(0,0,0,0.02);
+  z-index: -1;
+
+  @media only screen and (min-width: 62em) {
+    font-size: rem(80);
+    top: -10px;
+  }
 }

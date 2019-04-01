@@ -19,10 +19,20 @@
 .app-images {
   position: relative;
   width: 100%;
-  max-width: 334px;
-  margin-left: -30px;
+  // max-width: 334px;
   padding-top: 48px;
   z-index: 0;
+  text-align: center;
+
+  @media only screen and (min-width: 62em) {
+    max-width: 29%;
+    margin-left: -30px;
+  }
+}
+
+.app-img {
+  position: relative;
+  display: inline-block;
 
   &::after {
     position: absolute;
@@ -35,15 +45,19 @@
     z-index: -1;
     background: url(../img/shining.png) no-repeat 50% 50% / cover;
   }
+
 }
 
 .app-controls {
   width: 100%;
-  max-width: 830px;
-  // width: 72.807%;
+  // max-width: 830px;
   margin-left: -5px;
   margin-right: -5px;
   z-index: 1;
+
+  @media only screen and (min-width: 62em) {
+    max-width: 74%;
+  }
 }
 
 .app-controls__col {
@@ -58,6 +72,7 @@
   margin-bottom: 10px;
   padding-top: 42px;
   padding-right: 25px;
+  padding-bottom: 30px;
   flex-grow: 1;
   font-size: rem(18);
   line-height: 1.6;
@@ -70,6 +85,11 @@
     width: 62px;
     height: 56px;
     background: url(../img/green-arrow.png) no-repeat 0 0 / cover;
+    display: none;
+
+    @media only screen and (min-width: 80em) {
+      display: block;
+    }
   }
 }
 
