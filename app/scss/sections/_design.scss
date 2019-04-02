@@ -3,14 +3,19 @@
 /*------------------------------------------*/
 
 .design {
-  padding-top: 82px;
-  padding-bottom: 55px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 82px;
+    padding-bottom: 55px;
+  }
 }
 
 .design-title {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 
-  @media only screen and (min-width: 62em) {
+  @media only screen and (min-width: 80em) {
     margin-bottom: 100px;
   }
 }

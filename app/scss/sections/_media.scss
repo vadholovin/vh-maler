@@ -3,12 +3,21 @@
 /*------------------------------------------*/
 
 .media {
-  padding-top: 82px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 82px;
+    padding-bottom: 80px;
+  }
 }
 
 .media-title {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+
+  @media only screen and (min-width: 62em) {
+    margin-bottom: 60px;
+  }
 }
 
 .media-list {
@@ -18,12 +27,12 @@
   > [class*=pure-u] {
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 }
 
 .media-item {
-  min-height: 416px;
+  // min-height: 416px;
   padding: 25px;
   padding-bottom: 35px;
   border: 5px solid #edeeef;
@@ -38,9 +47,8 @@
 }
 
 .media-item__img {
-  position: relative;
   width: 100%;
-  max-width: 275px;
+  max-width: 272px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;

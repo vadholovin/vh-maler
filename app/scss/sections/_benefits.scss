@@ -4,8 +4,12 @@
 
 .benefits {
   position: relative;
-  padding-top: 120px;
+  padding-top: 100px;
   color: #fff;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 120px;
+  }
 
   &::before {
     background-color: rgba(0, 0, 0, 0.85);
@@ -35,7 +39,11 @@
 .benefit {
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 104px;
+  margin-bottom: 80px;
+
+  @media only screen and (min-width: 80em) {
+    margin-bottom: 104px;
+  }
 }
 
 .benefit-title {
@@ -43,8 +51,12 @@
   display: block;
   margin-bottom: 10px;
   padding-left: 36px;
-  font: bold rem(26) $fontS;
+  font: bold rem(20) $fontS;
   line-height: 1;
+
+  @media only screen and (min-width: 62em) {
+    font-size: rem(26);
+  }
 
   &::after {
     position: absolute;

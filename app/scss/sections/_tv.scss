@@ -3,12 +3,21 @@
 /*------------------------------------------*/
 
 .tv {
-  padding-top: 82px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 82px;
+    padding-bottom: 70px;
+  }
+
+  @media only screen and (min-width: 80em) {
+    padding-bottom: 90px;
+  }
 }
 
 .tv-title {
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .tv-wrapper {
@@ -16,21 +25,7 @@
 }
 
 .tv-slider {
-  // height: 630px;
   position: relative;
-}
-
-.tv-nav {
-
-  .nav-prev,
-  .nav-next {
-    width: 26px;
-    height: 40px;
-    background-image: url(../img/icons/arrow-right-lg.svg);
-  }
-
-  .nav-prev { transform: translateY(-50%) rotate(180deg); left: 20px; }
-  .nav-next { transform: translateY(-50%); right: 20px; }
 }
 
 .tv-item {
@@ -68,7 +63,7 @@
   }
 
   &--outer {
-    margin-top: 40px;
+    margin-top: 32px;
 
     @media only screen and (min-width: 62em) {
       display: none;

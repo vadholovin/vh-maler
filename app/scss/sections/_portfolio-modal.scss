@@ -19,6 +19,7 @@
   margin-left: auto;
   margin-right: auto;
   // height: 600px;
+  overflow: hidden;
 }
 
 .cv-cell {
@@ -79,7 +80,7 @@
 }
 
 .inner-thumbs__wrapper {
-  height: 176px;
+  height: 165px;
   max-width: 100%;
   width: 100%;
   display: none;

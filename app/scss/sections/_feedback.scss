@@ -8,8 +8,11 @@
 }
 
 .feedback-heading {
-  padding-left: 40px;
   margin-bottom: 26px;
+
+  @media only screen and (min-width: 62em) {
+    padding-left: 40px;
+  }
 }
 
 .feedback-title {
@@ -79,7 +82,10 @@
   border-top: 1px solid #e0e0e0;
   padding-top: 18px;
   font-size: rem(14);
-  text-align: right;
+
+  @media only screen and (min-width: 48em) {
+    text-align: right;
+  }
 
   a {
     color: $green;

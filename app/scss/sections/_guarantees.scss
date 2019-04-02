@@ -3,8 +3,13 @@
 /*------------------------------------------*/
 
 .guarantees {
-  padding-top: 84px;
-  padding-bottom: 74px;
+  padding-top: 60px;
+  padding-bottom: 36px;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 84px;
+    padding-bottom: 96px;
+  }
 }
 
 .guarantees-title {
@@ -19,7 +24,7 @@
   > [class*=pure-u] {
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 24px;
   }
 }
 
@@ -27,11 +32,15 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 40px;
+  padding: 32px;
   border: 1px solid #f7f7f7;
   border-radius: 2px;
   background-color: #fff;
   box-shadow: 0px 7px 13.5px 1.5px rgba(0, 0, 0, 0.08);
+
+  @media only screen and (min-width: 62em) {
+    padding: 40px;
+  }
 
   &:hover {
     .guarantee-logo img {
@@ -42,8 +51,12 @@
 
 .guarantee-head {
   display: table;
-  padding-bottom: 26px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e0e0e0;
+
+  @media only screen and (min-width: 62em) {
+    padding-bottom: 26px;
+  }
 }
 
 .guarantee-time {
@@ -54,14 +67,22 @@
   border-right: 1px solid #e0e0e0;
   font-family: $fontS;
   font-weight: 500;
-  font-size: rem(26);
+  font-size: rem(24);
   line-height: 1;
   text-transform: uppercase;
+
+  @media only screen and (min-width: 62em) {
+    font-size: rem(26);
+  }
 }
 
 .guarantee-body {
   padding-top: 12px;
-  font-size: rem(18);
+  font-size: rem(16);
+
+  @media only screen and (min-width: 62em) {
+    font-size: rem(18);
+  }
 
   b {
     font-weight: 500;
@@ -71,7 +92,11 @@
 .guarantee-logo {
   display: table-cell;
   vertical-align: middle;
-  padding-left: 30px;
+  padding-left: 20px;
+
+  @media only screen and (min-width: 62em) {
+    padding-left: 30px;
+  }
 }
 
 .guarantee-logo img {

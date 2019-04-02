@@ -3,9 +3,14 @@
 /*------------------------------------------*/
 
 .faq {
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 44px;
   border-top: 1px solid #fff;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
 }
 
 .faq-title {
@@ -24,26 +29,34 @@
 
 .faq-accordion__item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   padding-left: 25px;
   padding-right: 25px;
   border: 1px solid #f7f7f7;
   border-radius: 2px;
   background-color: #ffffff;
   box-shadow: 0px 7px 10.92px 1.08px rgba(0, 0, 0, 0.08);
+
+  @media only screen and (min-width: 62em) {
+    margin-bottom: 30px;
+  }
 }
 
 .faq-accordion__title {
   position: relative;
   width: 100%;
   display: block;
-  padding-left: 58px;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  line-height: 1.4;
+  padding: 20px 16px 20px 58px;
+  line-height: 1.15;
   font-size: 1rem;
   cursor: pointer;
   user-select: none;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    line-height: 1.4;
+  }
 
   &::before {
     content: ' ';

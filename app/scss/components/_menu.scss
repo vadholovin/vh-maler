@@ -62,20 +62,19 @@
   }
 
   li {
-    line-height: 1;
+    line-height: 1.6;
   }
 }
 
 .menu-secondary__item {
   display: inline-block;
-  padding: 5px;
   font: normal rem(13.6) $fontS;
   color: #fff !important;
   text-transform: uppercase;
   transition: 0.2s ease;
 
   @media only screen and (min-width: 80em) {
-    padding: 0.5rem rem(18);
+    padding: 0 rem(18);
   }
 
   &:focus {

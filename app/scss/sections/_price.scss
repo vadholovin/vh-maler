@@ -3,16 +3,21 @@
 /*------------------------------------------*/
 
 .price {
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 0;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 70px;
+  }
 }
 
 .price-title {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .price-heading {
   margin-bottom: 20px;
+  padding-top: 20px;
   padding-bottom: 18px;
   border-bottom: 1px solid #e0e0e0;
   text-align: center;
@@ -20,8 +25,12 @@
 
 .price-subtitle {
   font-weight: 200;
-  font-size: rem(40);
+  font-size: rem(32);
   line-height: 1;
+
+  @media only screen and (min-width: 62em) {
+    font-size: rem(40);
+  }
 }
 
 .price-list {

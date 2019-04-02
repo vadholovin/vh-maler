@@ -3,12 +3,21 @@
 /*------------------------------------------*/
 
 .team {
-  padding-top: 95px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 95px;
+    padding-bottom: 50px;
+  }
 }
 
 .team-title {
-  margin-bottom: 65px;
+  margin-bottom: 40px;
+
+  @media only screen and (min-width: 62em) {
+    margin-bottom: 65px;
+  }
 }
 
 .team-wrapper {

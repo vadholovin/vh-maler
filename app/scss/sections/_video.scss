@@ -3,12 +3,16 @@
 /*------------------------------------------*/
 
 .video {
-  padding-top: 72px;
+  padding-top: 60px;
   padding-bottom: 55px;
+
+  @media only screen and (min-width: 62em) {
+    padding-top: 72px;
+  }
 }
 
 .video-title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   @media only screen and (min-width: 62em) {
     margin-bottom: 60px;
