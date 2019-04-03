@@ -51,7 +51,7 @@
 
 
 /*----------------------------------------------------*/
-/*  #SWITCH APP IMAGES
+/*  #APP FUNCTIONALITY
 /*----------------------------------------------------*/
 
 (function ($) {
@@ -64,8 +64,10 @@
 
   $('.app-control').click(function () {
     var el = $(this).attr('id');
+    var desc = $(this).find('.app-control__desc').text();
     $('.app-img').hide();
     $('.app-img.'+el).show();
+    $('.app-img__desc').text(desc);
   });
 
 })(jQuery);
@@ -249,12 +251,8 @@ jQuery(document).ready(function($){
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
-    draggable: false,
-    // imagesLoaded: true,
     bgLazyLoad: true,
     bgLazyLoad: 1,
-    selectedAttraction: 0.2,
-    friction: 0.8,
   };
 
   var $carousel = $('#worksSlider_1').flickity(options);
@@ -281,12 +279,8 @@ jQuery(document).ready(function($){
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
-    draggable: false,
-    // imagesLoaded: true,
     bgLazyLoad: true,
     bgLazyLoad: 1,
-    selectedAttraction: 0.2,
-    friction: 0.8,
   };
 
   var $carousel = $('#worksSlider_2').flickity(options);
@@ -316,12 +310,9 @@ jQuery(document).ready(function($){
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
-    draggable: false,
     imagesLoaded: true,
     lazyLoad: true,
     lazyLoad: 2,
-    selectedAttraction: 0.2,
-    friction: 0.8,
   };
 
   var $carousel = $('#bnaSlider').flickity(options);
@@ -355,9 +346,6 @@ jQuery(document).ready(function($){
     pageDots: false,
     draggable: false,
     imagesLoaded: true,
-    selectedAttraction: 0.2,
-    friction: 0.8,
-    // setGallerySize: false,
   };
 
   var $carousel = $('#cvSlider_1').flickity(options);
@@ -387,11 +375,8 @@ jQuery(document).ready(function($){
     wrapAround: true,
     freeScroll: true,
     pageDots: false,
-    draggable: false,
     imagesLoaded: true,
     hash: true,
-    selectedAttraction: 0.2,
-    friction: 0.8,
     arrowShape: { 
       x0: 10,
       x1: 50, y1: 40,
@@ -464,8 +449,6 @@ jQuery(document).ready(function($){
     draggable: false,
     imagesLoaded: true,
     hash: true,
-    selectedAttraction: 0.2,
-    friction: 0.8,
   };
 
   var $carousel = $('#priceSlider_1').flickity(options);
@@ -495,11 +478,8 @@ jQuery(document).ready(function($){
     freeScroll: true,
     prevNextButtons: false,
     pageDots: false,
-    draggable: false,
     imagesLoaded: true,
     hash: true,
-    selectedAttraction: 0.2,
-    friction: 0.8,
   };
 
   var $carousel = $('#priceSlider_2').flickity(options);
@@ -585,8 +565,6 @@ jQuery(document).ready(function($){
     pageDots: true,
     draggable: true,
     imagesLoaded: true,
-    selectedAttraction: 0.2,
-    friction: 0.8,
   };
 
   var $carousel = $('#reviewsSlider').flickity(options);
@@ -622,8 +600,6 @@ jQuery(document).ready(function($){
     cellAlign: 'center',
     setGallerySize: false,
     imagesLoaded: true,
-    selectedAttraction: 0.2,
-    friction: 0.8,
   };
 
   if ( matchMedia('screen and (min-width: 768px)').matches ) {
